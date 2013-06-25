@@ -1,0 +1,7 @@
+package br.usp.libras.sign.face;
+
+public enum Others {
+    
+    NADA, QUEIXO, FACE, EXPRESSAO_QUESTAO, ORELHA, PESCOCO, ATRAS_DA_CABECA,
+    EXPRESSAO_RADIANTE,  CABELO, QUEIXO_PARA_CIMA, QUEIXO_PARA_FRENTE;
+}

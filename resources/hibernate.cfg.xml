@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<!-- Hibernate configuration file -->
+<!-- In a VRaptor project this file shoul be place on WEB-FIN/classes folder -->	
+<hibernate-configuration>
+
+	<session-factory>
+	
+		<!-- change these values according your settings -->
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="hibernate.connection.url">jdbc:mysql://host</property>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.username">username</property>
+		<property name="hibernate.connection.password">password</property>
+
+		<property name="hibernate.show_sql">false</property>
+		<property name="hibernate.hbm2ddl.auto">update</property>
+		<property name="hibernate.cache.provider_class">org.hibernate.cache.HashtableCacheProvider</property>
+
+	<!-- the properties below avoid loosing connection for inativicty -->
+        <property name="hibernate.connection.provider_class">org.hibernate.connection.C3P0ConnectionProvider</property>  
+        <property name="hibernate.c3p0.max_size">30</property>  
+        <property name="hibernate.c3p0.min_size">5</property>  
+        <property name="hibernate.c3p0.timeout">100</property> 
+
+	<!-- now mapping our classes -->
+ 		<mapping class="br.usp.libras.sign.Sign" />
+ 		<mapping class="br.usp.libras.sign.Word" />
+ 		<mapping class="br.usp.libras.sign.Literal" />
+ 		<mapping class="br.usp.libras.sign.Inherence" />
+ 		<mapping class="br.usp.libras.sign.symbol.Symbol" />
+ 		<mapping class="br.usp.libras.sign.symbol.Hand" />
+ 		<mapping class="br.usp.libras.sign.movement.HandMovement" />
+ 		<mapping class="br.usp.libras.sign.movement.Segment" />
+ 		<mapping class="br.usp.libras.sign.face.Face" />
+
+	</session-factory>
+
+</hibernate-configuration>
+	

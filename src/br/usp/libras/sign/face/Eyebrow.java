@@ -1,0 +1,7 @@
+package br.usp.libras.sign.face;
+
+public enum Eyebrow {
+
+    NADA, PARA_CIMA, RETAS, PARA_BAIXO, PARA_CIMA_LADO_DE_DENTRO, PARA_BAIXO_LADO_DE_DENTRO,
+    PARA_CIMA_LADO_DE_FORA, PARA_BAIXO_LADO_DE_FORA;
+}

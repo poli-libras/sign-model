@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:complexType name="signList">
+    <xs:sequence>
+      <xs:element name="signs" type="sign" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="sign">
+    <xs:sequence>
+      <xs:element name="inherences" type="inherence" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="inserted" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="literals" type="literal" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="name" type="xs:string" minOccurs="0"/>
+      <xs:element name="symbols" type="symbol" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="verbType" type="verbType" minOccurs="0"/>
+      <xs:element name="words" type="word" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="inherence">
+    <xs:sequence>
+      <xs:element name="id" type="xs:long" minOccurs="0"/>
+      <xs:element name="inherence" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="literal">
+    <xs:sequence>
+      <xs:element name="id" type="xs:long" minOccurs="0"/>
+      <xs:element name="literal" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="symbol">
+    <xs:sequence>
+      <xs:element name="contact" type="contact" minOccurs="0"/>
+      <xs:element name="face" type="face" minOccurs="0"/>
+      <xs:element name="handsInUnity" type="xs:boolean"/>
+      <xs:element name="id" type="xs:long" minOccurs="0"/>
+      <xs:element name="leftHand" type="hand" minOccurs="0"/>
+      <xs:element name="location" type="location" minOccurs="0"/>
+      <xs:element name="rightHand" type="hand" minOccurs="0"/>
+      <xs:element name="sequence" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="face">
+    <xs:sequence>
+      <xs:element name="chin" type="chin" minOccurs="0"/>
+      <xs:element name="eyebrow" type="eyebrow" minOccurs="0"/>
+      <xs:element name="eyes" type="eyes" minOccurs="0"/>
+      <xs:element name="forehead" type="forehead" minOccurs="0"/>
+      <xs:element name="gaze" type="gaze" minOccurs="0"/>
+      <xs:element name="mounth" type="mounth" minOccurs="0"/>
+      <xs:element name="nose" type="nose" minOccurs="0"/>
+      <xs:element name="others" type="others" minOccurs="0"/>
+      <xs:element name="teeth" type="teeth" minOccurs="0"/>
+      <xs:element name="tongue" type="tongue" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="hand">
+    <xs:sequence>
+      <xs:element name="fingers" type="fingersMovement" minOccurs="0"/>
+      <xs:element name="movement" type="handMovement" minOccurs="0"/>
+      <xs:element name="orientation" type="handOrientation" minOccurs="0"/>
+      <xs:element name="plane" type="handPlane" minOccurs="0"/>
+      <xs:element name="rotation" type="handRotation" minOccurs="0"/>
+      <xs:element name="shape" type="handShape" minOccurs="0"/>
+      <xs:element name="side" type="handSide" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="handMovement">
+    <xs:sequence>
+      <xs:element name="frequency" type="frequency" minOccurs="0"/>
+      <xs:element name="segments" type="segment" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="speed" type="speed" minOccurs="0"/>
+      <xs:element name="startsInLocation" type="xs:boolean"/>
+      <xs:element name="type" type="movementType" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="segment">
+    <xs:sequence>
+      <xs:element name="direction" type="direction" minOccurs="0"/>
+      <xs:element name="magnitude" type="magnitude" minOccurs="0"/>
+      <xs:element name="sequence" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="word">
+    <xs:sequence>
+      <xs:element name="id" type="xs:long" minOccurs="0"/>
+      <xs:element name="word" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:simpleType name="contact">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="NENHUM"/>
+      <xs:enumeration value="CONTATO"/>
+      <xs:enumeration value="PEGAR"/>
+      <xs:enumeration value="ENTRE"/>
+      <xs:enumeration value="BATER"/>
+      <xs:enumeration value="ESCOVAR"/>
+      <xs:enumeration value="ESFREGAR"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="chin">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="NADA"/>
+      <xs:enumeration value="ESTUFADAS"/>
+      <xs:enumeration value="NAO_ESTUFFADAS"/>
+      <xs:enumeration value="SUGADAS"/>
+      <xs:enumeration value="TENSAS"/>
+      <xs:enumeration value="LINGUA_NA_BOCHECHA_DIREITA"/>
+      <xs:enumeration value="TODA_FACE_MOVE_PARA_DIREITA"/>
+      <xs:enumeration value="SOPRANDO_AR"/>
+      <xs:enumeration value="AR_DENTRO_DA_BOCA"/>
+      <xs:enumeration value="EXPIRANDO"/>
+      <xs:enumeration value="INSPIRANDO"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="eyebrow">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="NADA"/>
+      <xs:enumeration value="PARA_CIMA"/>
+      <xs:enumeration value="RETAS"/>
+      <xs:enumeration value="PARA_BAIXO"/>
+      <xs:enumeration value="PARA_CIMA_LADO_DE_DENTRO"/>
+      <xs:enumeration value="PARA_BAIXO_LADO_DE_DENTRO"/>
+      <xs:enumeration value="PARA_CIMA_LADO_DE_FORA"/>
+      <xs:enumeration value="PARA_BAIXO_LADO_DE_FORA"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="eyes">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="NADA"/>
+      <xs:enumeration value="ABERTOS"/>
+      <xs:enumeration value="ESPRIMIDOS"/>
+      <xs:enumeration value="FECHADOS"/>
+      <xs:enumeration value="MEIO_ABERTOS"/>
+      <xs:enumeration value="MEIO_FECHADOS"/>
+      <xs:enumeration value="BEM_ABERTOS"/>
+      <xs:enumeration value="CICLHOS"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="forehead">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="NADA"/>
+      <xs:enumeration value="TESTA"/>
+      <xs:enumeration value="FRANZIDA"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="gaze">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="NADA"/>
+      <xs:enumeration value="PARA_CIMA"/>
+      <xs:enumeration value="PARA_CIMA_PARA_UM_LADO"/>
+      <xs:enumeration value="PARA_OS_LADOS"/>
+      <xs:enumeration value="PARA_BAIXO_PARA_UM_LADO"/>
+      <xs:enumeration value="PARA_BAIXO"/>
+      <xs:enumeration value="PARA_FRENTE"/>
+      <xs:enumeration value="PARA_FRENTE_PARA_UM_LADO"/>
+      <xs:enumeration value="PARA_OS_LADOS_2"/>
+      <xs:enumeration value="PARA_TRAS_PARA_UM_LADO"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="mounth">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="NADA"/>
+      <xs:enumeration value="RETA_FECHADA"/>
+      <xs:enumeration value="FECHADA_PARA_FRENTE"/>
+      <xs:enumeration value="SORRISO_FECHADO"/>
+      <xs:enumeration value="SORRISO_ABERTO"/>
+      <xs:enumeration value="METADE_SORRISO_METADE_RETA"/>
+      <xs:enumeration value="TRISTE_FECHADA"/>
+      <xs:enumeration value="TRISTE_ABERTA"/>
+      <xs:enumeration value="ABERTA"/>
+      <xs:enumeration value="ABERTA_PARA_FRENTE"/>
+      <xs:enumeration value="ABERTA_FRANZIDA_AO_REDOR"/>
+      <xs:enumeration value="OVAL_ABERTA"/>
+      <xs:enumeration value="BOCEJO"/>
+      <xs:enumeration value="RETANGULAR_ABERTA_HORIZONTAL"/>
+      <xs:enumeration value="RETANGULAR_ABERTA_VERTICAL"/>
+      <xs:enumeration value="BEIJO"/>
+      <xs:enumeration value="BEIJO_PROJETANDO"/>
+      <xs:enumeration value="TENSA"/>
+      <xs:enumeration value="TENSA_PARA_FRENTE"/>
+      <xs:enumeration value="TENSA_PARA_TRAS"/>
+      <xs:enumeration value="SUGADOS"/>
+      <xs:enumeration value="LABIO_SUPERIOR_SOBRE_LABIO_INFERIOR"/>
+      <xs:enumeration value="LABIO_INFERIOR_SOBRE_LABIO_SUPERIOR"/>
+      <xs:enumeration value="UMA_DOBRA_AO_REDOR_DA_BOCA"/>
+      <xs:enumeration value="DOBRAS_AO_REDOR_DA_BOCA"/>
+      <xs:enumeration value="UMA_DOBRA_AO_REDOR_DO_LADO_DIREITO_DA_BOCA"/>
+      <xs:enumeration value="DOBRAS_AO_REDOR_DO_LADO_DIREITO_DA_BOCA"/>
+      <xs:enumeration value="LADO_DIREITO_ERGUIDO"/>
+      <xs:enumeration value="AMBOS_LADOS_ERGUIDOS"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="nose">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="NADA"/>
+      <xs:enumeration value="NARIZ"/>
+      <xs:enumeration value="TOQUE_NA_PONTA_DO_NARIZ"/>
+      <xs:enumeration value="FRANZIDO"/>
+      <xs:enumeration value="SE_MEXE"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="others">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="NADA"/>
+      <xs:enumeration value="QUEIXO"/>
+      <xs:enumeration value="FACE"/>
+      <xs:enumeration value="EXPRESSAO_QUESTAO"/>
+      <xs:enumeration value="ORELHA"/>
+      <xs:enumeration value="PESCOCO"/>
+      <xs:enumeration value="ATRAS_DA_CABECA"/>
+      <xs:enumeration value="EXPRESSAO_RADIANTE"/>
+      <xs:enumeration value="CABELO"/>
+      <xs:enumeration value="QUEIXO_PARA_CIMA"/>
+      <xs:enumeration value="QUEIXO_PARA_FRENTE"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="teeth">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="NADA"/>
+      <xs:enumeration value="DENTES"/>
+      <xs:enumeration value="SUPERIORES_TOCANDO_LABIO_INFERIOR"/>
+      <xs:enumeration value="INFERIORES_TOCANDO_LABIO_SUPERIOR"/>
+      <xs:enumeration value="SUPERIORES_TOCANDO_LINGUA"/>
+      <xs:enumeration value="INFERIORES_TOCANDO_LINGUA"/>
+      <xs:enumeration value="MORDIDA_CENTRO_DO_LABIO"/>
+      <xs:enumeration value="MORDIDA_LADO_ESQUERDO_DO_LABIO"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="tongue">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="NADA"/>
+      <xs:enumeration value="PARA_CIMA_ABERTA"/>
+      <xs:enumeration value="VISIVEL_DENTRO_DA_BOCA_PARA_BAIXO"/>
+      <xs:enumeration value="METADE_PARA_CIMA_COM_BOCA_FECHADA"/>
+      <xs:enumeration value="VISIVEL_DENTRO_DA_BOCA_PARA_CIMA"/>
+      <xs:enumeration value="PARA_FORA_NO_CENTRO"/>
+      <xs:enumeration value="VISIVEL_DENTRO_DA_BOCA_NO_CENTRO"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="fingersMovement">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="NENHUM"/>
+      <xs:enumeration value="MEDIA_FECHA"/>
+      <xs:enumeration value="MEDIA_ABRE"/>
+      <xs:enumeration value="PROXIMAL_FECHA"/>
+      <xs:enumeration value="PROXIMAL_ABRE"/>
+      <xs:enumeration value="PROXIMAIS_ABREM_E_FECHAM_JUNTAS"/>
+      <xs:enumeration value="PROXIMAIS_ABREM_E_FECHAM_ALTERNATIVAMENTE"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="frequency">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="SIMPLES"/>
+      <xs:enumeration value="REPETIDO"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="direction">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="PARA_CIMA"/>
+      <xs:enumeration value="PARA_BAIXO"/>
+      <xs:enumeration value="DIAGONAL_PARA_CIMA_DIREITA"/>
+      <xs:enumeration value="DIAGONAL_PARA_BAIXO_DIREITA"/>
+      <xs:enumeration value="DIAGONAL_PARA_CIMA_ESQUERDA"/>
+      <xs:enumeration value="DIAGONAL_PARA_BAIXO_ESQUERDA"/>
+      <xs:enumeration value="PARA_FRENTE"/>
+      <xs:enumeration value="PARA_TRAS"/>
+      <xs:enumeration value="DIAGONAL_PARA_FRENTE_DIREITA"/>
+      <xs:enumeration value="DIAGONAL_PARA_TRAS_DIREITA"/>
+      <xs:enumeration value="DIAGONAL_PARA_FRENTE_ESQUERDA"/>
+      <xs:enumeration value="DIAGONAL_PARA_TRAS_ESQUERDA"/>
+      <xs:enumeration value="PARA_DIREITA"/>
+      <xs:enumeration value="PARA_ESQUERDA"/>
+      <xs:enumeration value="PARA_FRENTE_E_PARA_CIMA_NA_DIAGONAL"/>
+      <xs:enumeration value="PARA_BAIXO_E_PARA_TRAS_NA_DIAGONAL"/>
+      <xs:enumeration value="PARA_FRENTE_E_PARA_CIMA_DIREITA_NA_DIAGONAL"/>
+      <xs:enumeration value="PARA_FRENTE_E_PARA_CIMA_ESQUERDA_NA_DIAGONAL"/>
+      <xs:enumeration value="PARA_BAIXO_E_PARA_TRAS_DIREITA_NA_DIAGONAL"/>
+      <xs:enumeration value="PARA_BAIXO_E_PARA_TRAS_ESQUERDA_NA_DIAGONAL"/>
+      <xs:enumeration value="CIRCULAR_HORIZONTAL"/>
+      <xs:enumeration value="CIRCULAR_VERTICAL"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="magnitude">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="CURTO"/>
+      <xs:enumeration value="NORMAL"/>
+      <xs:enumeration value="LONGO"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="speed">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="LENTO"/>
+      <xs:enumeration value="NORMAL"/>
+      <xs:enumeration value="RAPIDO"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="movementType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="RETILINIO"/>
+      <xs:enumeration value="CURVO"/>
+      <xs:enumeration value="HELICOIDAL"/>
+      <xs:enumeration value="SINUOSO"/>
+      <xs:enumeration value="CIRCULAR"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="handOrientation">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="WHITE"/>
+      <xs:enumeration value="HALF"/>
+      <xs:enumeration value="BLACK"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="handPlane">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="VERTICAL"/>
+      <xs:enumeration value="HORIZONTAL"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="handRotation">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="ZERO"/>
+      <xs:enumeration value="RETO"/>
+      <xs:enumeration value="RASO"/>
+      <xs:enumeration value="INCLINADO_PARA_DENTRO"/>
+      <xs:enumeration value="INCLINADO_PARA_FORA"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="handShape">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="INDICADOR"/>
+      <xs:enumeration value="FLEXIONADO1"/>
+      <xs:enumeration value="CURVADO_X"/>
+      <xs:enumeration value="MAO_D"/>
+      <xs:enumeration value="MAO_2"/>
+      <xs:enumeration value="FLEXIONADO2"/>
+      <xs:enumeration value="MAO_U"/>
+      <xs:enumeration value="CURVADO_U"/>
+      <xs:enumeration value="MAO_N"/>
+      <xs:enumeration value="MAO_R"/>
+      <xs:enumeration value="MAO_3"/>
+      <xs:enumeration value="FLEXIONADO3"/>
+      <xs:enumeration value="_3DEDOS_O"/>
+      <xs:enumeration value="U_COM_POLEGAR"/>
+      <xs:enumeration value="MAO_PATO_ABERTA"/>
+      <xs:enumeration value="MAO_K"/>
+      <xs:enumeration value="MAO_PATO_FECHADA"/>
+      <xs:enumeration value="MAO_4"/>
+      <xs:enumeration value="MAO_B"/>
+      <xs:enumeration value="MAO_E"/>
+      <xs:enumeration value="MAO_5"/>
+      <xs:enumeration value="CURVADOS"/>
+      <xs:enumeration value="CURVADOS_COM_POLEGAR"/>
+      <xs:enumeration value="MAO_5_COM_POLEGAR_PARA_FRENTE"/>
+      <xs:enumeration value="MAO_ESTICADA"/>
+      <xs:enumeration value="MAO_ESTENDIDA_COM_POLEGAR"/>
+      <xs:enumeration value="ANGULO_FECHADO"/>
+      <xs:enumeration value="ANGULO_ABERTO"/>
+      <xs:enumeration value="ANGULO_ABERTO_AFASTADO"/>
+      <xs:enumeration value="ANGULO_COM_POLEGAR"/>
+      <xs:enumeration value="ANGULO_SEM_POLEGAR"/>
+      <xs:enumeration value="MAO_C"/>
+      <xs:enumeration value="C_AFASTADO"/>
+      <xs:enumeration value="MAO_C_COM_POLEGAR_PARA_O_LADO"/>
+      <xs:enumeration value="MAO_O"/>
+      <xs:enumeration value="O_CARACOL"/>
+      <xs:enumeration value="O_CURVADO"/>
+      <xs:enumeration value="MAO_W"/>
+      <xs:enumeration value="MAO_3_6"/>
+      <xs:enumeration value="MAO_TERCA"/>
+      <xs:enumeration value="MAO_3_PARA_FRENTE"/>
+      <xs:enumeration value="MAO_I_AMANTE"/>
+      <xs:enumeration value="MAO_I"/>
+      <xs:enumeration value="MAO_Y"/>
+      <xs:enumeration value="MAO_I_LOVE_YOU"/>
+      <xs:enumeration value="MAO_BANHEIRO"/>
+      <xs:enumeration value="MAO_DROGA"/>
+      <xs:enumeration value="MAO_SO"/>
+      <xs:enumeration value="MAO_DOENTE"/>
+      <xs:enumeration value="MAO_JESUS"/>
+      <xs:enumeration value="MAO_PROFISSAO"/>
+      <xs:enumeration value="MAO_CERTO"/>
+      <xs:enumeration value="MAO_CERTO_ABERTA"/>
+      <xs:enumeration value="MAO_CERTO_RETA"/>
+      <xs:enumeration value="MAO_T"/>
+      <xs:enumeration value="MAO_F"/>
+      <xs:enumeration value="MAO_L"/>
+      <xs:enumeration value="MAO_G"/>
+      <xs:enumeration value="MAO_REVOLVER"/>
+      <xs:enumeration value="SEM_NOME"/>
+      <xs:enumeration value="MAO_L_COM_O"/>
+      <xs:enumeration value="MAO_L_COM_C"/>
+      <xs:enumeration value="MAO_PASSARINHO_ABERTA"/>
+      <xs:enumeration value="MAO_PASSARINHO_FECHADA"/>
+      <xs:enumeration value="MAO_SETE"/>
+      <xs:enumeration value="MAO_ONZE"/>
+      <xs:enumeration value="MAO_ONZE_APERTA"/>
+      <xs:enumeration value="MAO_A"/>
+      <xs:enumeration value="MAO_S"/>
+      <xs:enumeration value="MAO_FIGA"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="handSide">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="RIGHT"/>
+      <xs:enumeration value="LEFT"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="location">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="ESPACO_NEUTRO"/>
+      <xs:enumeration value="TOPO_DA_CABECA"/>
+      <xs:enumeration value="TESTA"/>
+      <xs:enumeration value="ROSTO"/>
+      <xs:enumeration value="ROSTO_SUPERIOR"/>
+      <xs:enumeration value="ROSTO_INFERIOR"/>
+      <xs:enumeration value="ORELHA"/>
+      <xs:enumeration value="OLHOS"/>
+      <xs:enumeration value="NARIZ"/>
+      <xs:enumeration value="BOCA"/>
+      <xs:enumeration value="CHOCHECHAS"/>
+      <xs:enumeration value="QUEIXO"/>
+      <xs:enumeration value="PESCOCO"/>
+      <xs:enumeration value="OMBRO"/>
+      <xs:enumeration value="BUSTO"/>
+      <xs:enumeration value="ESTOMAGO"/>
+      <xs:enumeration value="CINTURA"/>
+      <xs:enumeration value="BRACOS"/>
+      <xs:enumeration value="ANTEBRACO"/>
+      <xs:enumeration value="COTOVELO"/>
+      <xs:enumeration value="PULSO"/>
+      <xs:enumeration value="PALMA"/>
+      <xs:enumeration value="COSTAS_DA_MAO"/>
+      <xs:enumeration value="LADO_INDICADOR"/>
+      <xs:enumeration value="LADO_DEDO_MINIMO"/>
+      <xs:enumeration value="DEDOS"/>
+      <xs:enumeration value="PONTA_DOS_DEDOS"/>
+      <xs:enumeration value="DEDO_MINIMO"/>
+      <xs:enumeration value="ANULAR"/>
+      <xs:enumeration value="DEDO_MEDIO"/>
+      <xs:enumeration value="INDICADOR"/>
+      <xs:enumeration value="POLEGAR"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="verbType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="NAO_VERBO"/>
+      <xs:enumeration value="NAO_FLEXIONA"/>
+      <xs:enumeration value="CONCORDA_COM_SUJEITO_E_OBJETO"/>
+      <xs:enumeration value="FLEXIONA_COM_LOCALIZACAO"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>
+
