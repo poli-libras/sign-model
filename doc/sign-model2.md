@@ -103,11 +103,11 @@ para melhor representar o movimento circular foi criada a classe RoundSegment, q
 
 Definição do segmento circular:
 
-    * **Direction**: {horário, anti-horário} // herdado
-    * **Magnitude** (raio) // herdado
-    * **RoundPlane**: vertical x horizontal
-    * **RoundLength**: inteiro x meio x quarto
-    * **initialMovVector** vetor que ajuda a determinar se movimento é "para fora" ou "para dentro" ou intermediários. 
+   * **Direction**: {horário, anti-horário} // herdado
+   * **Magnitude** (raio) // herdado
+   * **RoundPlane**: vertical x horizontal
+   * **RoundLength**: inteiro x meio x quarto
+   * **initialMovVector** vetor que ajuda a determinar se movimento é "para fora" ou "para dentro" ou intermediários. 
 
 Como criamos uma herança, é preciso pensar no JPA de Segment e RoundSegment .
 
