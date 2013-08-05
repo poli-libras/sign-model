@@ -33,7 +33,9 @@ A seguir segue os pontos levantados na análise seguidos de um diagnóstico no m
 
 * **Locação na perna**, para sinais CALÇA e SAIA. Acho que esses sinais já ficam bem com a locação CINTURA, que já existe. Mas se fosse fazer perna, teria a frente da perna e o lado da perna. 
 
-* **Movimento de ombro**. Único aspecto de expressão corporal que encontrei, em CAMISA. Mas olhando no dicionário do acesso brasil, nem precisava. Mas poderia ser implementado como atributo de expressão corporal, da mesma forma que existem os atributos da expressão facial. 
+* **Movimento de ombro**. Usado em CAMISA. Poderia ser implementado como atributo de expressão corporal, da mesma forma que existem os atributos da expressão facial. 
+
+* **Movimento de cabeça**: balançar cabeça como "sim" ou como "não". 
 
 * **Mãos em unidade**: na verdade indica somente que a mão não-dominante também vai ao ponto de locação, o que tem mais sentido para os sinais sem movimento. Como é um atributo confuso, poderia ser alterado jogando a locação para mão, mas o que permitiria inconsistência, já que a mão não-dominante ou vai pro mesmo lugar que a dominante, ou fica parada. Dessa forma, vou deixar como estar. 
 
@@ -111,6 +113,11 @@ Definição do segmento circular:
 
 Como criamos uma herança, é preciso pensar no JPA de Segment e RoundSegment .
 
+* **Movimento corporal**
+
+   * Movimento dos ombros: atributo shoulder em Body.
+   * Movimento de cabeça: atributo head em Body.
+
 Diagrama de classes do Sign Model 2.0
 -------------------------------------
 
@@ -127,6 +134,5 @@ https://github.com/poli-libras/sign-model/tree/master/doc/sinais
 Pontos não contemplados
 -----------------------
 
-* Expressão facial 
-
+...
 
