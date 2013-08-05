@@ -78,19 +78,15 @@ Alterações aplicadas
 
 * **FingersMovement**
 
-** Proximais abrem e fecham alternadamente virou Oscilam 
-
-** Se esfregam adicionado 
-
-** Location no Contact adicionado 
-
-** Proximais fecham alternadamente adicionado 
+    * Proximais abrem e fecham alternadamente virou Oscilam 
+    * Se esfregam adicionado 
+    * Location no Contact adicionado 
+    * Proximais fecham alternadamente adicionado 
 
 * **HandMovement**
 
-** interpolation adicionado, sinal PODE 
-
-** startsInLocation é trocado por locationAt = {início, meio, fim} 
+    * interpolation adicionado, sinal PODE 
+    * startsInLocation é trocado por locationAt = {início, meio, fim} 
 
 Obs: é preciso ter cuidado para não confundir o Contact + ContactQuantity com esse MovementLocationAt. Por exemplo, para sinais sem movimento, como SABER e DIA fica bem claro como usamos o ponto de contato, mas para sinais como JUNHO não é tão óbvio.
 
@@ -107,11 +103,11 @@ para melhor representar o movimento circular foi criada a classe RoundSegment, q
 
 Definição do segmento circular:
 
-** **Direction**: {horário, anti-horário} // herdado
-** **Magnitude** (raio) // herdado
-** **RoundPlane**: vertical x horizontal
-** **RoundLength**: inteiro x meio x quarto
-** **initialMovVector** vetor que ajuda a determinar se movimento é "para fora" ou "para dentro" ou intermediários. 
+    * **Direction**: {horário, anti-horário} // herdado
+    * **Magnitude** (raio) // herdado
+    * **RoundPlane**: vertical x horizontal
+    * **RoundLength**: inteiro x meio x quarto
+    * **initialMovVector** vetor que ajuda a determinar se movimento é "para fora" ou "para dentro" ou intermediários. 
 
 Como criamos uma herança, é preciso pensar no JPA de Segment e RoundSegment .
 
