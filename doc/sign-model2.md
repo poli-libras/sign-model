@@ -115,6 +115,19 @@ Definição do segmento circular:
 
 Como criamos uma herança, é preciso pensar no JPA de Segment e RoundSegment .
 
+Diagrama de classes do Sign Model 2.0
+-------------------------------------
+
+Modelo atual
+------------
+
+![Diagrama de classes do sign-model 2.0](https://raw.github.com/poli-libras/sign-model/master/doc/model2.png)
+
+Exemplos de sinais modelados:
+-----------------------------
+
+https://github.com/poli-libras/sign-model/tree/master/doc/sinais
+
 Pontos não contemplados
 -----------------------
 
