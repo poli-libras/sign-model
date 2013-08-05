@@ -1,0 +1,20 @@
+sign.name = SAL
+
+sign.symbol[0].location = BOCA
+sign.symbol[0].leftHandResting = SIM
+sign.symbol[0].contact.location = BOCA
+sign.symbol[0].contact.contactType = CONTATO
+
+sign.symbol[0].rightHand.shape = INDICADOR
+sign.symbol[0].rightHand.yaw = 180
+sign.symbol[0].rightHand.pitch = 0
+sign.symbol[0].rightHand.roll = -45
+
+sign.symbol[1].location = ESPACO_NEUTRO
+sign.symbol[0].leftHandResting = SIM
+
+sign.symbol[1].rightHand.shape = ANGULO_FECHADO
+sign.symbol[1].rightHand.yaw = 90
+sign.symbol[1].rightHand.pitch = 90
+sign.symbol[1].rightHand.roll = 45
+sign.symbol[0].rightHand.fingersMoviment = SE_ESFREGAM

@@ -1,0 +1,59 @@
+sign.name = CINEMA
+
+sign.symbol[0].location = ESPACO_NEUTRO
+sign.symbol[0].leftHandResting = NAO
+sign.symbol[0].contact.location = COSTA_DA_MAO_ESQUERDA
+sign.symbol[0].contact.contactType = CONTATO
+
+sign.symbol[0].rightHand.shape = MAO_ESTENDIDA_COM_POLEGAR
+sign.symbol[0].rightHand.yaw = 0
+sign.symbol[0].rightHand.pitch = 0
+sign.symbol[0].rightHand.roll = 45
+
+sign.symbol[0].leftHand.shape = MAO_S
+sign.symbol[0].lefttHand.yaw = 0
+sign.symbol[0].leftHand.pitch = 90
+sign.symbol[0].leftHand.roll = 90
+
+sign.symbol[1].location = ESPACO_NEUTRO
+sign.symbol[1].leftHandResting = NAO
+sign.symbol[1].contact.location = COSTA_DA_MAO_ESQUERDA
+sign.symbol[1].contact.contactType = CONTATO
+
+sign.symbol[1].rightHand.shape = MAO_ESTENDIDA_COM_POLEGAR
+sign.symbol[1].rightHand.yaw = 0
+sign.symbol[1].rightHand.pitch = 0
+sign.symbol[1].rightHand.roll = -45
+
+sign.symbol[1].leftHand.shape = MAO_S
+sign.symbol[1].lefttHand.yaw = 0
+sign.symbol[1].leftHand.pitch = 90
+sign.symbol[1].leftHand.roll = 90
+
+sign.symbol[2].location = ESPACO_NEUTRO
+sign.symbol[2].leftHandResting = NAO
+sign.symbol[2].contact.location = COSTA_DA_MAO_ESQUERDA
+sign.symbol[2].contact.contactType = CONTATO
+
+sign.symbol[2].rightHand.shape = MAO_ESTENDIDA_COM_POLEGAR
+sign.symbol[2].rightHand.yaw = 0
+sign.symbol[2].rightHand.pitch = 0
+sign.symbol[2].rightHand.roll = 45
+
+sign.symbol[2].leftHand.shape = MAO_S
+sign.symbol[2].lefttHand.yaw = 0
+sign.symbol[2].leftHand.pitch = 90
+sign.symbol[2].leftHand.roll = 90
+
+sign.symbol[3].location = COSTAS_DA_MAO
+sign.symbol[3].contact.contactType = CONTATO
+
+sign.symbol[3].rightHand.shape = MAO_ESTENDIDA_COM_POLEGAR
+sign.symbol[3].rightHand.yaw = 0
+sign.symbol[3].rightHand.pitch = 0
+sign.symbol[3].rightHand.roll = -45
+
+sign.symbol[3].leftHand.shape = MAO_S
+sign.symbol[3].lefttHand.yaw = 0
+sign.symbol[3].leftHand.pitch = 90
+sign.symbol[3].leftHand.roll = 90

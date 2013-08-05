@@ -1,0 +1,12 @@
+sign.name = SAUDADE
+
+sign.symbol[0].location = BUSTO_ESQUERDO
+sign.symbol[0].leftHandResting = SIM
+sign.symbol[0].contact.location = BUSTO_ESQUERDO
+sign.symbol[0].contact.contactType = ESCOVAR
+sign.symbol[0].contact.quantity = 2
+
+sign.symbol[0].rightHand.shape = MAO_A
+sign.symbol[0].rightHand.yaw = 180
+sign.symbol[0].rightHand.pitch = 0
+sign.symbol[0].rightHand.roll = -45

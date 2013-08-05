@@ -1,0 +1,20 @@
+sign.name = DESCULPAR
+
+sign.symbol[0].location = QUEIXO
+sign.symbol[0].leftHandResting = SIM
+sign.symbol[0].contact.location = QUEIXO
+sign.symbol[0].contact.contactType = CONTATO
+
+sign.symbol[0].rightHand.shape = MAO_Y
+sign.symbol[0].rightHand.yaw = 180
+sign.symbol[0].rightHand.pitch = 0
+sign.symbol[0].rightHand.roll = 0
+
+sign.symbol[0].rightHand.movement.speed = NORMAL
+sign.symbol[0].rightHand.movement.frequency = SIMPLES
+sign.symbol[0].rightHand.movement.locationAt = INICIO
+
+// StraightHandMovement
+sign.symbol[0].leftHand.movement.type = RETILINEO
+sign.symbol[0].leftHand.movement.segments[0].direction = PARA_FRENTE
+sign.symbol[0].leftHand.movement.segments[0].magnitude = NORMAL

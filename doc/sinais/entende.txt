@@ -1,0 +1,19 @@
+sign.name = ENTENDE
+
+sign.symbol[0].location = TESTA_DIREITA
+sign.symbol[0].leftHandResting = SIM
+
+sign.symbol[0].rightHand.shape = MAO_B
+sign.symbol[0].rightHand.yaw = 90
+sign.symbol[0].rightHand.pitch = 45
+sign.symbol[0].rightHand.roll = 0
+sign.symbol[0].rightHand.ShakeYaw = True
+
+
+
+
+
+
+
+
+

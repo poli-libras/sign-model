@@ -1,0 +1,38 @@
+sign.name = 
+
+sign.symbol[0].location = 
+sign.symbol[0].contact.contactType = 
+sign.symbol[0].contact.quantity = 
+
+sign.symbol[0].rightHand.shape = 
+sign.symbol[0].rightHand.yaw = 
+sign.symbol[0].rightHand.pitch = 
+sign.symbol[0].rightHand.roll = 
+sign.symbol[0].rightHand.fingers = 
+sign.symbol[0].rightHand.shakeYaw = 
+
+sign.symbol[0].rightHand.movement.speed = 
+sign.symbol[0].rightHand.movement.frequency = 
+sign.symbol[0].rightHand.movement.locationAt = 
+
+// StraightHandMovement
+sign.symbol[0].rightHand.movement.type = 
+sign.symbol[0].rightHand.movement.segments[0].direction = 
+sign.symbol[0].rightHand.movement.segments[0].magnitude = 
+
+// CircularHandMovement
+sign.symbol[0].rightHand.movement.segments[0].direction = 
+sign.symbol[0].rightHand.movement.segments[0].magnitude = 
+sign.symbol[0].rightHand.movement.segments[0].length =
+sign.symbol[0].rightHand.movement.segments[0].plane = 
+sign.symbol[0].rightHand.movement.segments[0].initialMovVector = 
+
+sign.symbol[0].leftHand.shape = 
+sign.symbol[0].lefttHand.yaw = 
+sign.symbol[0].leftHand.pitch = 
+sign.symbol[0].leftHand.roll = 
+sign.symbol[0].leftHand.fingers = 
+sign.symbol[0].leftHand.shakeYaw = 
+
+
+

@@ -1,0 +1,10 @@
+sign.name = FARINHA
+
+sign.symbol[0].location = ESPACO_NEUTRO
+sign.symbol[0].leftHandResting = SIM
+
+sign.symbol[0].rightHand.shape = ANGULO_ABERTO_AFASTADO
+sign.symbol[0].rightHand.yaw = 0
+sign.symbol[0].rightHand.pitch = 90
+sign.symbol[0].rightHand.roll = 0
+sign.symbol[0].rightHand.fingers = SE_ESFREGAM

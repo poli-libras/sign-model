@@ -1,0 +1,16 @@
+sign.name = DE_NADA
+
+sign.symbol[0].location = ESPACO_NEUTRO
+sign.symbol[0].leftHandResting = NAO
+sign.symbol[0].contact.location = PALMA_ESQUERDA
+sign.symbol[0].contact.contactType = ESFREGAR
+
+sign.symbol[0].rightHand.shape = MAO_ESTENDIDA_COM_POLEGAR
+sign.symbol[0].rightHand.yaw = 0
+sign.symbol[0].rightHand.pitch = 90
+sign.symbol[0].rightHand.roll = 45
+
+sign.symbol[0].leftHand.shape = MAO_ESTENDIDA_COM_POLEGAR
+sign.symbol[0].lefttHand.yaw = 180
+sign.symbol[0].leftHand.pitch = 90
+sign.symbol[0].leftHand.roll = 45

@@ -1,0 +1,73 @@
+sign.name = IDADE
+
+sign.symbol[0].location = ESPACO_NEUTRO_DIREITO
+sign.symbol[0].leftHandResting = SIM
+
+sign.symbol[0].rightHand.shape = MAO_Y
+sign.symbol[0].rightHand.yall = 180
+sign.symbol[0].rightHand.pitch = 0
+sign.symbol[0].rightHand.roll = -45
+
+sign.symbol[0].rightHand.movement.speed = RAPIDO
+sign.symbol[0].rightHand.movement.frequency = SIMPLES
+sign.symbol[0].rightHand.movement.locationAt = INICIO
+
+// StraightHandMovement
+sign.symbol[0].rightHand.movement.type = RETILINEO
+sign.symbol[0].rightHand.movement.segments[0].direction = PARA_TRAS
+sign.symbol[0].rightHand.movement.segments[0].magnitude = CURTO
+
+sign.symbol[1].location = BUSTO_DIREITO
+sign.symbol[1].leftHandResting = SIM
+sign.symbol[1].contact.location = BUSTO_DIREITO
+sign.symbol[1].contact.contactType = ESCOVAR
+
+sign.symbol[1].rightHand.shape = MAO_Y
+sign.symbol[1].rightHand.yall = 180
+sign.symbol[1].rightHand.pitch = 0
+sign.symbol[1].rightHand.roll = -45
+
+sign.symbol[1].rightHand.movement.speed = RAPIDO
+sign.symbol[1].rightHand.movement.frequency = SIMPLES
+sign.symbol[1].rightHand.movement.locationAt = INICIO
+
+// StraightHandMovement
+sign.symbol[1].rightHand.movement.type = RETILINEO
+sign.symbol[1].rightHand.movement.segments[1].direction = PARA_CIMA
+sign.symbol[1].rightHand.movement.segments[1].magnitude = CURTO
+
+sign.symbol[2].location = BUSTO_DIREITO
+sign.symbol[2].leftHandResting = SIM
+
+sign.symbol[2].rightHand.shape = MAO_Y
+sign.symbol[2].rightHand.yall = 180
+sign.symbol[2].rightHand.pitch = 0
+sign.symbol[2].rightHand.roll = -45
+
+sign.symbol[2].rightHand.movement.speed = RAPIDO
+sign.symbol[2].rightHand.movement.frequency = SIMPLES
+sign.symbol[2].rightHand.movement.locationAt = INICIO
+
+// StraightHandMovement
+sign.symbol[2].rightHand.movement.type = RETILINEO
+sign.symbol[2].rightHand.movement.segments[2].direction = PARA_TRAS
+sign.symbol[2].rightHand.movement.segments[2].magnitude = CURTO
+
+sign.symbol[3].location = BUSTO_DIREITO
+sign.symbol[3].leftHandResting = SIM
+sign.symbol[3].contact.location = BUSTO_DIREITO
+sign.symbol[3].contact.contactType = ESCOVAR
+
+sign.symbol[3].rightHand.shape = MAO_Y
+sign.symbol[3].rightHand.yall = 180
+sign.symbol[3].rightHand.pitch = 0
+sign.symbol[3].rightHand.roll = -45
+
+sign.symbol[3].rightHand.movement.speed = RAPIDO
+sign.symbol[3].rightHand.movement.frequency = SIMPLES
+sign.symbol[3].rightHand.movement.locationAt = INICIO
+
+// StraightHandMovement
+sign.symbol[3].rightHand.movement.type = RETILINEO
+sign.symbol[3].rightHand.movement.segments[3].direction = PARA_CIMA
+sign.symbol[3].rightHand.movement.segments[3].magnitude = CURTO

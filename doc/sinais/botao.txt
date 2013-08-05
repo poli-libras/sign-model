@@ -1,0 +1,45 @@
+sign.name = BOTAO
+
+sign.symbol[0].location = ESPACO_NEUTRO
+sign.symbol[0].leftHandResting = NAO
+
+sign.symbol[0].rightHand.shape = MAO_L
+sign.symbol[0].rightHand.yaw = 180
+sign.symbol[0].rightHand.pitch = 0
+sign.symbol[0].rightHand.roll = 45
+
+sign.symbol[0].rightHand.movement.speed = NORMAL
+sign.symbol[0].rightHand.movement.frequency = 2
+sign.symbol[0].rightHand.movement.locationAt = INICIO
+
+// CircularHandMovement
+sign.symbol[0].rightHand.movement.segments[0].direction = PARA_FRENTE
+sign.symbol[0].rightHand.movement.segments[0].magnitude = NORMAL
+sign.symbol[0].rightHand.movement.segments[0].length = 360
+sign.symbol[0].rightHand.movement.segments[0].initialMovVector = PARA_FRENTE
+
+sign.symbol[0].rightHand.movement.segments[1].direction = PARA_FRENTE
+sign.symbol[0].rightHand.movement.segments[1].magnitude = NORMAL
+sign.symbol[0].rightHand.movement.segments[1].length = 360
+sign.symbol[0].rightHand.movement.segments[1].initialMovVector = PARA_FRENTE
+
+
+sign.symbol[0].leftHand.shape = MAO_L
+sign.symbol[0].leftHand.yaw = 180
+sign.symbol[0].leftHand.pitch = 0
+sign.symbol[0].leftHand.roll = -45
+
+sign.symbol[0].leftHand.movement.speed = NORMAL
+sign.symbol[0].leftHand.movement.frequency = 2
+sign.symbol[0].leftHand.movement.locationAt = INICIO
+
+// CircularHandMovement
+sign.symbol[0].leftHand.movement.segments[0].direction = PARA_TRAS
+sign.symbol[0].leftHand.movement.segments[0].magnitude = NORMAL
+sign.symbol[0].leftHand.movement.segments[0].length = 360
+sign.symbol[0].leftHand.movement.segments[0].initialMovVector = PARA_TRAS
+
+sign.symbol[0].leftHand.movement.segments[1].direction = PARA_TRAS
+sign.symbol[0].leftHand.movement.segments[1].magnitude = NORMAL
+sign.symbol[0].leftHand.movement.segments[1].length = 360
+sign.symbol[0].leftHand.movement.segments[1].initialMovVector = PARA_TRAS

@@ -1,0 +1,35 @@
+sign.name = SAIA
+
+sign.symbol[0].location = CINTURA
+sign.symbol[0].leftHandResting = NAO
+sign.symbol[0].contact.location = CINTURA
+sign.symbol[0].contact.contactType = ESCOVAR
+
+sign.symbol[0].rightHand.shape = MAO_5
+sign.symbol[0].rightHand.yaw = 0
+sign.symbol[0].rightHand.pitch = 90
+sign.symbol[0].rightHand.roll = 0
+
+sign.symbol[0].rightHand.movement.speed = NORMAL
+sign.symbol[0].rightHand.movement.frequency = SIMPLES
+sign.symbol[0].rightHand.movement.locationAt = INICIO
+
+// StraightHandMovement
+sign.symbol[0].rightHand.movement.type = RETILINEO
+sign.symbol[0].rightHand.movement.segments[0].direction = PARA_BAIXO
+sign.symbol[0].rightHand.movement.segments[0].magnitude = NORMAL
+
+sign.symbol[0].leftHand.shape = MAO_5
+sign.symbol[0].lefttHand.yaw = 0
+sign.symbol[0].leftHand.pitch = 90
+sign.symbol[0].leftHand.roll = 0
+
+sign.symbol[0].leftHand.movement.speed = NORMAL
+sign.symbol[0].leftHand.movement.frequency = SIMPLES
+sign.symbol[0].leftHand.movement.locationAt = INICIO
+
+// StraightHandMovement
+sign.symbol[0].leftHand.movement.type = RETILINEO
+sign.symbol[0].leftHand.movement.segments[0].direction = PARA_BAIXO
+sign.symbol[0].leftHand.movement.segments[0].magnitude = NORMAL
+

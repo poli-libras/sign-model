@@ -1,0 +1,33 @@
+sign.name = CHAPEU
+
+sign.symbol[0].location = ORELHA
+sign.symbol[0].leftHandResting = NAO
+
+sign.symbol[0].rightHand.shape = MAO_A
+sign.symbol[0].rightHand.yaw = 90
+sign.symbol[0].rightHand.pitch = 0
+sign.symbol[0].rightHand.roll = 0
+
+sign.symbol[0].rightHand.movement.speed = NORMAL
+sign.symbol[0].rightHand.movement.frequency = SIMPLES
+sign.symbol[0].rightHand.movement.locationAt = FIM
+
+// StraightHandMovement
+sign.symbol[0].rightHand.movement.type = RETILINIO
+sign.symbol[0].rightHand.movement.segments[0].direction = PARA_BAIXO
+
+sign.symbol[0].leftHand.shape = MAO_A
+sign.symbol[0].leftHand.yaw = 90
+sign.symbol[0].leftHand.pitch = 0
+sign.symbol[0].leftHand.roll = 0
+
+sign.symbol[0].leftHand.movement.speed = NORMAL
+sign.symbol[0].leftHand.movement.frequency = SIMPLES
+sign.symbol[0].leftHand.movement.locationAt = fim
+
+// StraightHandMovement
+sign.symbol[0].leftHand.movement.type = RETILINIO
+sign.symbol[0].leftHand.movement.segments[0].direction = PARA_BAIXO
+
+
+

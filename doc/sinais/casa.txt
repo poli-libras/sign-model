@@ -1,0 +1,20 @@
+sign.name = CASA
+
+sign.symbol[0].location = ESPACO_NEUTRO
+sign.symbol[0].leftHandResting = NAO
+sign.symbol[0].contact.location = DEDOS_ESQUERDO
+sign.symbol[0].contact.contactType = CONTATO
+sign.symbol[0].contact.quantity = 2
+
+sign.symbol[0].rightHand.shape = MAO_5
+sign.symbol[0].rightHand.yaw = 90
+sign.symbol[0].rightHand.pitch = 45
+sign.symbol[0].rightHand.roll = 0
+
+sign.symbol[0].leftHand.shape = MAO_5
+sign.symbol[0].leftHand.yaw = 90
+sign.symbol[0].leftHand.pitch = 45
+sign.symbol[0].leftHand.roll = 0
+
+
+

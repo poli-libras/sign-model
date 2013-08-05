@@ -1,0 +1,241 @@
+sign.name = JUNHO
+
+sign.symbol[0].location = ESPACO_NEUTRO
+
+sign.symbol[0].rightHand.shape = MAO_U
+sign.symbol[0].rightHand.yaw = 90
+sign.symbol[0].rightHand.pitch = 45
+sign.symbol[0].rightHand.roll = 0
+
+sign.symbol[0].rightHand.movement.speed = NORMAL
+sign.symbol[0].rightHand.movement.frequency = SIMPLES
+sign.symbol[0].rightHand.movement.locationAt = INICIO
+
+// StraightHandMovement
+sign.symbol[0].rightHand.movement.type = RETILINEO
+sign.symbol[0].rightHand.movement.segments[0].direction = PARA_BAIXO
+
+sign.symbol[0].leftHand.shape = MAO_U
+sign.symbol[0].leftHand.yaw = 90
+sign.symbol[0].leftHand.pitch = 175
+sign.symbol[0].leftHand.roll = 0
+
+sign.symbol[0].leftHand.movement.speed = NORMAL
+sign.symbol[0].leftHand.movement.frequency = SIMPLES
+sign.symbol[0].leftHand.movement.locationAt = INICIO
+
+// StraightHandMovement
+sign.symbol[0].leftHand.movement.type = RETILINEO
+sign.symbol[0].leftHand.movement.segments[0].direction = PARA_CIMA
+
+sign.symbol[1].location = ESPACO_NEUTRO
+sign.symbol[1].contact.contactType = CONTATO
+
+sign.symbol[1].rightHand.shape = MAO_U
+sign.symbol[1].rightHand.yaw = 90
+sign.symbol[1].rightHand.pitch = 90
+sign.symbol[1].rightHand.roll = 0
+
+sign.symbol[1].rightHand.movement.speed = NORMAL
+sign.symbol[1].rightHand.movement.frequency = SIMPLES
+sign.symbol[1].rightHand.movement.locationAt = INICIO
+
+// StraightHandMovement
+sign.symbol[1].rightHand.movement.type = RETILINEO
+sign.symbol[1].rightHand.movement.segments[1].direction = PARA_BAIXO
+
+sign.symbol[1].leftHand.shape = MAO_U
+sign.symbol[1].leftHand.yaw = 90
+sign.symbol[1].leftHand.pitch = 90
+sign.symbol[1].leftHand.roll = 0
+
+sign.symbol[1].leftHand.movement.speed = NORMAL
+sign.symbol[1].leftHand.movement.frequency = SIMPLES
+sign.symbol[1].leftHand.movement.locationAt = INICIO
+
+// StraightHandMovement
+sign.symbol[1].leftHand.movement.type = RETILINEO
+sign.symbol[1].leftHand.movement.segments[1].direction = PARA_CIMA
+
+sign.symbol[2].location = ESPACO_NEUTRO
+
+sign.symbol[2].rightHand.shape = MAO_U
+sign.symbol[2].rightHand.yaw = 90
+sign.symbol[2].rightHand.pitch = 175
+sign.symbol[2].rightHand.roll = 0
+
+sign.symbol[2].rightHand.movement.speed = NORMAL
+sign.symbol[2].rightHand.movement.frequency = SIMPLES
+sign.symbol[2].rightHand.movement.locationAt = INICIO
+
+// StraightHandMovement
+sign.symbol[2].rightHand.movement.type = RETILINEO
+sign.symbol[2].rightHand.movement.segments[2].direction = PARA_CIMA
+
+sign.symbol[2].leftHand.shape = MAO_U
+sign.symbol[2].leftHand.yaw = 90
+sign.symbol[2].leftHand.pitch = 45
+sign.symbol[2].leftHand.roll = 0
+
+sign.symbol[2].leftHand.movement.speed = NORMAL
+sign.symbol[2].leftHand.movement.frequency = SIMPLES
+sign.symbol[2].leftHand.movement.locationAt = INICIO
+
+// StraightHandMovement
+sign.symbol[2].leftHand.movement.type = RETILINEO
+sign.symbol[2].leftHand.movement.segments[2].direction = PARA_BAIXO
+
+sign.symbol[3].location = ESPACO_NEUTRO
+sign.symbol[3].contact.contactType = CONTATO
+
+sign.symbol[3].rightHand.shape = MAO_U
+sign.symbol[3].rightHand.yaw = 90
+sign.symbol[3].rightHand.pitch = 90
+sign.symbol[3].rightHand.roll = 0
+
+sign.symbol[3].rightHand.movement.speed = NORMAL
+sign.symbol[3].rightHand.movement.frequency = SIMPLES
+sign.symbol[3].rightHand.movement.locationAt = INICIO
+
+// StraightHandMovement
+sign.symbol[3].rightHand.movement.type = RETILINEO
+sign.symbol[3].rightHand.movement.segments[3].direction = PARA_BAIXO
+
+sign.symbol[3].leftHand.shape = MAO_U
+sign.symbol[3].leftHand.yaw = 90
+sign.symbol[3].leftHand.pitch = 90
+sign.symbol[3].leftHand.roll = 0
+
+sign.symbol[3].leftHand.movement.speed = NORMAL
+sign.symbol[3].leftHand.movement.frequency = SIMPLES
+sign.symbol[3].leftHand.movement.locationAt = INICIO
+
+// StraightHandMovement
+sign.symbol[3].leftHand.movement.type = RETILINEO
+sign.symbol[3].leftHand.movement.segments[3].direction = PARA_CIMA
+
+sign.symbol[4].location = ESPACO_NEUTRO
+
+sign.symbol[4].rightHand.shape = MAO_U
+sign.symbol[4].rightHand.yaw = 90
+sign.symbol[4].rightHand.pitch = 45
+sign.symbol[4].rightHand.roll = 0
+
+sign.symbol[4].rightHand.movement.speed = NORMAL
+sign.symbol[4].rightHand.movement.frequency = SIMPLES
+sign.symbol[4].rightHand.movement.locationAt = INICIO
+
+// StraightHandMovement
+sign.symbol[4].rightHand.movement.type = RETILINEO
+sign.symbol[4].rightHand.movement.segments[4].direction = PARA_BAIXO
+
+sign.symbol[4].leftHand.shape = MAO_U
+sign.symbol[4].leftHand.yaw = 90
+sign.symbol[4].leftHand.pitch = 135
+sign.symbol[4].leftHand.roll = 0
+
+sign.symbol[4].leftHand.movement.speed = NORMAL
+sign.symbol[4].leftHand.movement.frequency = SIMPLES
+sign.symbol[4].leftHand.movement.locationAt = INICIO
+
+// StraightHandMovement
+sign.symbol[4].leftHand.movement.type = RETILINEO
+sign.symbol[4].leftHand.movement.segments[4].direction = PARA_CIMA
+
+sign.symbol[5].location = ESPACO_NEUTRO
+sign.symbol[5].contact.contactType = CONTATO
+
+sign.symbol[5].rightHand.shape = MAO_U
+sign.symbol[5].rightHand.yaw = 90
+sign.symbol[5].rightHand.pitch = 90
+sign.symbol[5].rightHand.roll = 0
+
+sign.symbol[5].rightHand.movement.speed = NORMAL
+sign.symbol[5].rightHand.movement.frequency = SIMPLES
+sign.symbol[5].rightHand.movement.locationAt = INICIO
+
+// StraightHandMovement
+sign.symbol[5].rightHand.movement.type = RETILINEO
+sign.symbol[5].rightHand.movement.segments[5].direction = PARA_BAIXO
+
+sign.symbol[5].leftHand.shape = MAO_U
+sign.symbol[5].leftHand.yaw = 90
+sign.symbol[5].leftHand.pitch = 90
+sign.symbol[5].leftHand.roll = 0
+
+sign.symbol[5].leftHand.movement.speed = NORMAL
+sign.symbol[5].leftHand.movement.frequency = SIMPLES
+sign.symbol[5].leftHand.movement.locationAt = INICIO
+
+// StraightHandMovement
+sign.symbol[5].leftHand.movement.type = RETILINEO
+sign.symbol[5].leftHand.movement.segments[5].direction = PARA_CIMA
+
+sign.symbol[6].location = ESPACO_NEUTRO
+
+sign.symbol[6].rightHand.shape = MAO_U
+sign.symbol[6].rightHand.yaw = 90
+sign.symbol[6].rightHand.pitch = 135
+sign.symbol[6].rightHand.roll = 0
+
+sign.symbol[6].rightHand.movement.speed = NORMAL
+sign.symbol[6].rightHand.movement.frequency = SIMPLES
+sign.symbol[6].rightHand.movement.locationAt = INICIO
+
+// StraightHandMovement
+sign.symbol[6].rightHand.movement.type = RETILINEO
+sign.symbol[6].rightHand.movement.segments[6].direction = PARA_CIMA
+
+sign.symbol[6].leftHand.shape = MAO_U
+sign.symbol[6].leftHand.yaw = 90
+sign.symbol[6].leftHand.pitch = 45
+sign.symbol[6].leftHand.roll = 0
+
+sign.symbol[6].leftHand.movement.speed = NORMAL
+sign.symbol[6].leftHand.movement.frequency = SIMPLES
+sign.symbol[6].leftHand.movement.locationAt = INICIO
+
+// StraightHandMovement
+sign.symbol[6].leftHand.movement.type = RETILINEO
+sign.symbol[6].leftHand.movement.segments[6].direction = PARA_BAIXO
+
+sign.symbol[7].location = ESPACO_NEUTRO
+sign.symbol[7].contact.contactType = CONTATO
+
+sign.symbol[7].rightHand.shape = MAO_U
+sign.symbol[7].rightHand.yaw = 90
+sign.symbol[7].rightHand.pitch = 90
+sign.symbol[7].rightHand.roll = 0
+
+sign.symbol[7].rightHand.movement.speed = NORMAL
+sign.symbol[7].rightHand.movement.frequency = SIMPLES
+sign.symbol[7].rightHand.movement.locationAt = INICIO
+
+// StraightHandMovement
+sign.symbol[7].rightHand.movement.type = RETILINEO
+sign.symbol[7].rightHand.movement.segments[7].direction = PARA_BAIXO
+
+sign.symbol[7].leftHand.shape = MAO_U
+sign.symbol[7].leftHand.yaw = 90
+sign.symbol[7].leftHand.pitch = 90
+sign.symbol[7].leftHand.roll = 0
+
+sign.symbol[7].leftHand.movement.speed = NORMAL
+sign.symbol[7].leftHand.movement.frequency = SIMPLES
+sign.symbol[7].leftHand.movement.locationAt = INICIO
+
+// StraightHandMovement
+sign.symbol[7].leftHand.movement.type = RETILINEO
+sign.symbol[7].leftHand.movement.segments[7].direction = PARA_CIMA
+
+sign.symbol[8].location = ESPACO_NEUTRO
+
+sign.symbol[8].rightHand.shape = MAO_U
+sign.symbol[8].rightHand.yaw = 90
+sign.symbol[8].rightHand.pitch = 45
+sign.symbol[8].rightHand.roll = 0
+
+sign.symbol[8].leftHand.shape = MAO_U
+sign.symbol[8].leftHand.yaw = 90
+sign.symbol[8].leftHand.pitch = 175
+sign.symbol[8].leftHand.roll = 0

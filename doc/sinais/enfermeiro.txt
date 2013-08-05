@@ -1,0 +1,40 @@
+sign.name = ENFERMEIRO
+
+sign.symbol[0].location = TESTA
+sign.symbol[0].leftHandResting = SIM
+sign.symbol[0].contact.location = TESTA
+sign.symbol[0].contact.contactType = ESCOVAR
+
+sign.symbol[0].rightHand.shape = INDICADOR
+sign.symbol[0].rightHand.yaw = 180
+sign.symbol[0].rightHand.pitch = 45
+sign.symbol[0].rightHand.roll = 0
+
+sign.symbol[0].rightHand.movement.speed = NORMAL
+sign.symbol[0].rightHand.movement.frequency = SIMPLES
+sign.symbol[0].rightHand.movement.locationAt = INICIO
+
+// StraightHandMovement
+sign.symbol[0].rightHand.movement.type = RETILINEO
+sign.symbol[0].rightHand.movement.segments[0].direction = PARA_BAIXO
+sign.symbol[0].rightHand.movement.segments[0].magnitude = CURTO
+
+sign.symbol[1].location = TESTA_ESQUERDA
+sign.symbol[1].leftHandResting = SIM
+sign.symbol[1].contact.location = TESTA_ESQUERDA
+sign.symbol[1].contact.contactType = ESCOVAR
+
+sign.symbol[1].rightHand.shape = INDICADOR
+sign.symbol[1].rightHand.yaw = 180
+sign.symbol[1].rightHand.pitch = 45
+sign.symbol[1].rightHand.roll = 0
+
+sign.symbol[1].rightHand.movement.speed = NORMAL
+sign.symbol[1].rightHand.movement.frequency = SIMPLES
+sign.symbol[1].rightHand.movement.locationAt = INICIO
+
+// StraightHandMovement
+sign.symbol[1].rightHand.movement.type = RETILINEO
+sign.symbol[1].rightHand.movement.segments[2].direction = PARA_DIREITA
+sign.symbol[1].rightHand.movement.segments[2].magnitude = CURTO
+

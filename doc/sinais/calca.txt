@@ -1,0 +1,31 @@
+sign.name = CALCA
+
+sign.symbol[0].location = QUADRIL
+sign.symbol[0].leftHandResting = NAO
+sign.symbol[0].contact.location = QUADRIL
+sign.symbol[0].contact.contactType = ESCOVAR
+
+sign.symbol[0].rightHand.shape = MAO_A
+sign.symbol[0].rightHand.yaw = 90
+sign.symbol[0].rightHand.pitch = 0
+sign.symbol[0].rightHand.roll = 90
+
+sign.symbol[0].rightHand.movement.speed = NORMAL
+sign.symbol[0].rightHand.movement.frequency = SIMPLES
+sign.symbol[0].rightHand.movement.locationAt = INICIO
+
+// StraightHandMovement
+sign.symbol[0].rightHand.movement.type = RETILINEO
+sign.symbol[0].rightHand.movement.segments[0].direction = PARA_CIMA
+sign.symbol[0].rightHand.movement.segments[0].magnitude = NORMAL
+
+sign.symbol[0].leftHand.shape = MAO_A
+sign.symbol[0].lefttHand.yaw = 90
+sign.symbol[0].leftHand.pitch = 0
+sign.symbol[0].leftHand.roll = 90
+
+// StraightHandMovement
+sign.symbol[0].leftHand.movement.type = RETILINEO
+sign.symbol[0].leftHand.movement.segments[0].direction = PARA_CIMA
+sign.symbol[0].leftHand.movement.segments[0].magnitude = NORMAL
+

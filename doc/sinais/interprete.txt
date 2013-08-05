@@ -1,0 +1,33 @@
+sign.name = INTERPRETE
+
+sign.symbol[0].location = ESPACO_NEUTRO
+sign.symbol[0].leftHandResting = NAO
+sign.symbol[0].contact.location = PALMA
+sign.symbol[0].contact.type = CONTATO
+sign.symbol[0].contact.quantity = 1
+
+sign.symbol[0].rightHand.shape = MAO_B
+sign.symbol[0].rightHand.yaw = 90
+sign.symbol[0].rightHand.pitch = 90
+sign.symbol[0].rightHand.roll = 0
+
+sign.symbol[0].leftHand.shape = MAO_ESTICADA
+sign.symbol[0].leftHand.yaw = 180
+sign.symbol[0].leftHand.pitch = 90
+sign.symbol[0].leftHand.roll = 0
+
+sign.symbol[1].location = ESPACO_NEUTRO
+sign.symbol[1].leftHandResting = NAO
+sign.symbol[1].contact.location = PALMA
+sign.symbol[1].contact.type = CONTATO
+sign.symbol[1].contact.quantity = 1
+
+sign.symbol[1].rightHand.shape = MAO_B
+sign.symbol[1].rightHand.yaw = 180
+sign.symbol[1].rightHand.pitch = -90
+sign.symbol[1].rightHand.roll = 90
+
+sign.symbol[1].leftHand.shape = MAO_ESTICADA
+sign.symbol[1].leftHand.yaw = 180
+sign.symbol[1].leftHand.pitch = 90
+sign.symbol[1].leftHand.roll = 0

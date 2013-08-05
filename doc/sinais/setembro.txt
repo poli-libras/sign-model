@@ -1,0 +1,29 @@
+sign.name = SETEMBRO
+
+sign.symbol[0].location = QUEIXO_DIREITO
+sign.symbol[0].leftHandResting = SIM
+sign.symbol[0].contact.location = QUEIXO_DIREITO
+sign.symbol[0].contact.contactType = CONTATO
+
+sign.symbol[0].rightHand.shape = MAO_L_COM_O
+sign.symbol[0].rightHand.yaw = 180
+sign.symbol[0].rightHand.pitch = 0
+sign.symbol[0].rightHand.roll = 0
+
+sign.symbol[1].location = QUEIXO_ESQUERDO
+sign.symbol[1].leftHandResting = SIM
+sign.symbol[1].contact.location = QUEIXO_ESQUERDO
+sign.symbol[1].contact.contactType = cONTATO
+
+sign.symbol[1].rightHand.shape = MAO_L_COM_O
+sign.symbol[1].rightHand.yaw = 180
+sign.symbol[1].rightHand.pitch = 0
+sign.symbol[1].rightHand.roll = 0
+
+
+
+
+
+
+
+

@@ -1,0 +1,21 @@
+sign.name = FLOR
+
+sign.symbol[0].location = BOCA
+sign.symbol[0].leftHandResting = SIM
+sign.symbol[0].contact.location = BOCA
+sign.symbol[0].contact.contactType = CONTATO
+
+sign.symbol[0].rightHand.shape = MAO_F
+sign.symbol[0].rightHand.yaw = 90
+sign.symbol[0].rightHand.pitch = 0
+sign.symbol[0].rightHand.roll = 0
+
+sign.symbol[0].rightHand.movement.speed = NORMAL
+sign.symbol[0].rightHand.movement.frequency = 2
+sign.symbol[0].rightHand.movement.locationAt = INICIO
+
+// CircularHandMovement
+sign.symbol[0].rightHand.movement.segments[0].direction = PARA_FRENTE
+sign.symbol[0].rightHand.movement.segments[0].magnitude = CURTO
+sign.symbol[0].rightHand.movement.segments[0].length = 45
+sign.symbol[0].rightHand.movement.segments[0].initialMovVector = PARA_CIMA

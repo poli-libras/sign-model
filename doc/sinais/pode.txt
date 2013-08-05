@@ -1,0 +1,34 @@
+sign.name = PODE
+
+sign.symbol[0].location = ESPACO_NEUTRO
+sign.symbol[0].leftHandResting = NAO
+
+sign.symbol[0].rightHand.shape = MAO_S
+sign.symbol[0].rightHand.yaw = 180
+sign.symbol[0].rightHand.pitch = 0
+sign.symbol[0].rightHand.roll = 90
+
+sign.symbol[0].rightHand.movement.speed = NORMAL
+sign.symbol[0].rightHand.movement.frequency = SIMPLES
+sign.symbol[0].rightHand.movement.locationAt = INICIO
+sign.symbol[0].rightHand.movement.interpolationType = Acentuado ao final
+
+// StraightHandMovement
+sign.symbol[0].rightHand.movement.type = RETILINIO
+sign.symbol[0].rightHand.movement.segments[0].direction = PARA_BAIXO
+sign.symbol[0].rightHand.movement.segments[0].magnitude = NORMAL
+
+sign.symbol[0].leftHand.shape = MAO_S
+sign.symbol[0].leftHand.yaw = 180
+sign.symbol[0].leftHand.pitch = 0
+sign.symbol[0].leftHand.roll = 90
+
+sign.symbol[0].leftHand.movement.speed = NORMAL
+sign.symbol[0].leftHand.movement.frequency = SIMPLES
+sign.symbol[0].leftHand.movement.locationAt = INICIO
+sign.symbol[0].leftHand.movement.interpolationType = Acentuado ao final
+
+// StraightHandMovement
+sign.symbol[0].leftHand.movement.type = RETILINIO
+sign.symbol[0].leftHand.movement.segments[0].direction = PARA_BAIXO
+sign.symbol[0].leftHand.movement.segments[0].magnitude = NORMAL

@@ -1,0 +1,21 @@
+sign.name = TARDE
+
+sign.symbol[0].location = QUEIXO
+sign.symbol[0].leftHandResting = SIM
+sign.symbol[0].contact.location = QUEIXO
+sign.symbol[0].contact.contactType = CONTATO
+sign.symbol[0].contact.quantity = 1
+
+sign.symbol[0].rightHand.shape = MAO_ESTENDIDA_COM_POLEGAR
+sign.symbol[0].rightHand.yaw = 0
+sign.symbol[0].rightHand.pitch = 0
+sign.symbol[0].rightHand.roll = 0
+
+sign.symbol[1].location = QUEIXO
+sign.symbol[1].leftHandResting = SIM
+
+sign.symbol[1].rightHand.shape = MAO_ESTENDIDA_COM_POLEGAR
+sign.symbol[1].rightHand.yaw = 0
+sign.symbol[1].rightHand.pitch = 90
+sign.symbol[1].rightHand.roll = 0
+

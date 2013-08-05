@@ -1,0 +1,24 @@
+sign.name = CAMISA
+
+sign.symbol[0].location = OMBRO_DIREITO
+sign.symbol[0].leftHandResting = SIM
+sign.symbol[0].contact.location = CAMISA
+sign.symbol[0].contact.contactType = PEGAR
+
+sign.symbol[0].shoulder = LEVANTADO
+
+sign.symbol[0].rightHand.shape = MAO_CERTO_ESTENDIDA
+sign.symbol[0].rightHand.yaw = 90
+sign.symbol[0].rightHand.pitch = 90
+sign.symbol[0].rightHand.roll = 0
+
+sign.symbol[0].rightHand.movement.speed = RAPIDO
+sign.symbol[0].rightHand.movement.frequency = 2
+sign.symbol[0].rightHand.movement.locationAt = INICIO
+
+// StraightHandMovement
+sign.symbol[0].rightHand.movement.type = RETILINEO
+sign.symbol[0].rightHand.movement.segments[0].direction = PARA_CIMA
+sign.symbol[0].rightHand.movement.segments[0].magnitude = NORMAL
+
+

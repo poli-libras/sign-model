@@ -1,0 +1,16 @@
+sign.name = ALUNO
+
+sign.symbol[0].location = OMBRO_ESQUERDO
+sign.symbol[0].leftHandResting = SIM
+sign.symbol[0].contact.location = OMBRO_ESQUERDO
+sign.symbol[0].contact.contactType = ESCOVAR
+
+sign.symbol[0].rightHand.shape = MAO_A
+sign.symbol[0].rightHand.yaw = 180
+sign.symbol[0].rightHand.pitch = 0
+sign.symbol[0].rightHand.roll = 45
+
+sign.symbol[0].rightHand.movement.speed = NORMAL
+sign.symbol[0].rightHand.movement.frequency = 2
+sign.symbol[0].rightHand.movement.locationAt = INICIO
+sign.symbol[0].rightHand.movement.segments[0].direction = PARA_BAIXO

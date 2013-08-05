@@ -1,0 +1,33 @@
+sign.name = TRADUTOR
+
+sign.symbol[0].location = ESPACO_NEUTRO
+sign.symbol[0].leftHandResting = NAO
+sign.symbol[0].contact.location = PALMA_ESQUERDA
+sign.symbol[0].contact.type = CONTATO
+sign.symbol[0].contact.quantity = 1
+
+sign.symbol[0].rightHand.shape = MAO_2
+sign.symbol[0].rightHand.yaw = 90
+sign.symbol[0].rightHand.pitch = 90
+sign.symbol[0].rightHand.roll = 0
+
+sign.symbol[0].leftHand.shape = MAO_ESTICADA
+sign.symbol[0].leftHand.yaw = 180
+sign.symbol[0].leftHand.pitch = -90
+sign.symbol[0].leftHand.roll = 0
+
+sign.symbol[1].location = ESPACO_NEUTRO
+sign.symbol[0].leftHandResting = NAO
+sign.symbol[0].contact.location = PALMA_ESQUERDA
+sign.symbol[1].contact.type = CONTATO
+sign.symbol[1].contact.quantity = 1
+
+sign.symbol[1].rightHand.shape = MAO_2
+sign.symbol[1].rightHand.yaw = 90
+sign.symbol[1].rightHand.pitch = 90
+sign.symbol[1].rightHand.roll = 180
+
+sign.symbol[1].leftHand.shape = MAO_S
+sign.symbol[1].leftHand.yaw = 180
+sign.symbol[1].leftHand.pitch = -90
+sign.symbol[1].leftHand.roll = 0

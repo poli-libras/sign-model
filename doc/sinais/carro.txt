@@ -1,0 +1,59 @@
+sign.name = CARRO
+
+sign.symbol[0].location = ESPACO_NEUTRO
+sign.symbol[0].leftHandResting = NAO
+
+sign.symbol[0].rightHand.shape = MAO_A
+sign.symbol[0].rightHand.yaw = 90
+sign.symbol[0].rightHand.pitch = 0
+sign.symbol[0].rightHand.roll = 90
+
+sign.symbol[0].rightHand.movement.speed = NORMAL
+sign.symbol[0].rightHand.movement.frequency = SIMPLES
+sign.symbol[0].rightHand.movement.locationAt = INICIO
+
+// CircularHandMovement
+sign.symbol[0].rightHand.movement.segments[0].direction = ANTI_HORARIO
+sign.symbol[0].rightHand.movement.segments[0].length = 0.20 // menos de 1/4 de volta
+sign.symbol[0].rightHand.movement.segments[0].plane = VERTICAL
+sign.symbol[0].rightHand.movement.segments[0].initialMovVector = PRA_CIMA 
+
+sign.symbol[0].rightHand.movement.segments[1].direction = HORARIO
+sign.symbol[0].rightHand.movement.segments[1].length = 0.40 
+sign.symbol[0].rightHand.movement.segments[1].plane = VERTICAL
+sign.symbol[0].rightHand.movement.segments[1].initialMovVector = vetor pra baixo e pra direita apoiado na
+reta tangente à circunferência no ponto em que a mão está! 
+
+sign.symbol[0].rightHand.movement.segments[2].direction = ANTI_HORARIO
+sign.symbol[0].rightHand.movement.segments[2].length = 0.20 
+sign.symbol[0].rightHand.movement.segments[2].plane = VERTICAL
+sign.symbol[0].rightHand.movement.segments[2].initialMovVector = vetor pra cima e pra direita apoiado na
+reta tangente à circunferência no ponto em que a mão está!
+
+sign.symbol[0].leftHand.shape = MAO_A
+sign.symbol[0].lefttHand.yaw = 90
+sign.symbol[0].leftHand.pitch = 0
+sign.symbol[0].leftHand.roll = 90
+
+sign.symbol[0].leftHand.movement.speed = NORMAL
+sign.symbol[0].leftHand.movement.frequency = SIMPLES
+sign.symbol[0].leftHand.movement.locationAt = INICIO
+
+// CircularHandMovement
+sign.symbol[0].leftHand.movement.segments[0].direction = HORARIO
+sign.symbol[0].leftHand.movement.segments[0].length = 0.20 // menos de 1/4 de volta
+sign.symbol[0].leftHand.movement.segments[0].plane = VERTICAL
+sign.symbol[0].leftHand.movement.segments[0].initialMovVector = PRA_CIMA 
+
+sign.symbol[0].leftHand.movement.segments[1].direction = ANTI_HORARIO
+sign.symbol[0].leftHand.movement.segments[1].length = 0.40 
+sign.symbol[0].leftHand.movement.segments[1].plane = VERTICAL
+sign.symbol[0].leftHand.movement.segments[1].initialMovVector = vetor pra cima e pra esquerda apoiado na
+reta tangente à circunferência no ponto em que a mão está! 
+
+sign.symbol[0].leftHand.movement.segments[2].direction = HORARIO
+sign.symbol[0].leftHand.movement.segments[2].length = 0.20 
+sign.symbol[0].leftHand.movement.segments[2].plane = VERTICAL
+sign.symbol[0].leftHand.movement.segments[2].initialMovVector = vetor pra baixo e pra esquerda apoiado na
+reta tangente à circunferência no ponto em que a mão está!
+

@@ -1,0 +1,21 @@
+sign.name = MAR
+
+sign.symbol[0].location = ESPACO_NEUTRO
+sign.symbol[0].leftHandResting = SIM
+
+sign.symbol[0].rightHand.shape = MAO_5
+sign.symbol[0].rightHand.yaw = 0
+sign.symbol[0].rightHand.pitch = 90
+sign.symbol[0].rightHand.roll = 0
+sign.symbol[0].rightHand.fingersMoviment = OSCILAM
+
+sign.symbol[0].rightHand.moviment.speed = NORMAL
+sign.symbol[0].rightHand.moviment.frequency = SIMPLES
+sign.symbol[0].rightHand.moviment.locationAt = INICIO
+
+// StraightHandMovement
+sign.symbol[0].rightHand.movement.type = RETILINEO
+sign.symbol[0].rightHand.movement.segments[0].direction = PARA_DIREITA
+sign.symbol[0].rightHand.movement.segments[0].magnitude = NORMAL
+
+

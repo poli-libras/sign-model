@@ -1,0 +1,37 @@
+sign.name = PIZZA
+
+sign.symbol[0].location = ESTOMAGO
+sign.symbol[0].contact.contactType = 
+sign.symbol[0].contact.quantity = 
+
+sign.symbol[0].rightHand.shape = MAO_P
+sign.symbol[0].rightHand.yaw = 90
+sign.symbol[0].rightHand.pitch = 0
+sign.symbol[0].rightHand.roll = 90
+
+sign.symbol[0].rightHand.movement.speed = NORMAL
+sign.symbol[0].rightHand.movement.frequency = SIMPLES
+sign.symbol[0].rightHand.movement.locationAt = FIM
+
+// CircularHandMovement
+sign.symbol[0].rightHand.movement.segments[0].direction = ANTI_HORARIO
+sign.symbol[0].rightHand.movement.segments[0].length = MEIO
+sign.symbol[0].rightHand.movement.segments[0].plane = HORIZONTAL
+sign.symbol[0].rightHand.movement.segments[0].initialMovVector = PRA_DIREITA 
+
+sign.symbol[0].leftHand.shape = MAO_P
+sign.symbol[0].lefttHand.yaw = 90
+sign.symbol[0].leftHand.pitch = 0
+sign.symbol[0].leftHand.roll = 90
+
+sign.symbol[0].rightHand.movement.speed = NORMAL
+sign.symbol[0].rightHand.movement.frequency = SIMPLES
+sign.symbol[0].rightHand.movement.locationAt = FIM
+
+// CircularHandMovement
+sign.symbol[0].leftHand.movement.segments[0].direction = HORARIO
+sign.symbol[0].leftHand.movement.segments[0].length = MEIO
+sign.symbol[0].leftHand.movement.segments[0].plane = HORIZONTAL
+sign.symbol[0].leftHand.movement.segments[0].initialMovVector = PRA_ESQUERDA
+
+

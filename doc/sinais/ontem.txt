@@ -1,0 +1,23 @@
+sign.name = ONTEM
+
+sign.symbol[0].location = ORELHA 
+sign.symbol[0].leftHandResting = SIM
+
+sign.symbol[0].rightHand.shape = MAO_L
+sign.symbol[0].rightHand.yaw = 0
+sign.symbol[0].rightHand.pitch = 90
+sign.symbol[0].rightHand.roll = 0
+
+sign.symbol[1].location = ORELHA 
+sign.symbol[1].leftHandResting = SIM
+
+sign.symbol[1].rightHand.shape = MAO_L
+sign.symbol[1].rightHand.yaw = 0
+sign.symbol[1].rightHand.pitch = 0
+sign.symbol[1].rightHand.roll = 0
+
+
+
+
+
+

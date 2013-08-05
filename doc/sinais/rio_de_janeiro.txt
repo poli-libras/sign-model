@@ -1,0 +1,30 @@
+sign.name = RIO_DE_JANEIRO
+
+sign.symbol[0].location = OMBRO_ESQUERDO
+
+sign.symbol[0].rightHand.shape = MAO_ONZE
+sign.symbol[0].rightHand.yaw = 90
+sign.symbol[0].rightHand.pitch = 45
+sign.symbol[0].rightHand.roll = 0
+
+sign.symbol[1].location = OMBRO_ESQUERDO
+
+sign.symbol[1].rightHand.shape = MAO_ONZE
+sign.symbol[1].rightHand.yaw = 90
+sign.symbol[1].rightHand.pitch = 90
+sign.symbol[1].rightHand.roll = 0
+
+sign.symbol[2].location = OMBRO_ESQUERDO
+
+sign.symbol[2].rightHand.shape = MAO_ONZE
+sign.symbol[2].rightHand.yaw = 90
+sign.symbol[2].rightHand.pitch = 45
+sign.symbol[2].rightHand.roll = 0
+
+sign.symbol[3].location = OMBRO_ESQUERDO
+
+sign.symbol[3].rightHand.shape = MAO_ONZE
+sign.symbol[3].rightHand.yaw = 90
+sign.symbol[3].rightHand.pitch = 90
+sign.symbol[3].rightHand.roll = 0
+

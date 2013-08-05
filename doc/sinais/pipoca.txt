@@ -1,0 +1,91 @@
+sign.name = PIPOCA
+
+sign.symbol[0].location = ESPACO_NEUTRO
+sign.symbol[0].leftHandResting = NAO
+
+sign.symbol[0].rightHand.shape = MAO_L_COM_O
+sign.symbol[0].rightHand.yaw = 180
+sign.symbol[0].rightHand.pitch = 0
+sign.symbol[0].rightHand.roll = 0
+sign.symbol[0].rightHand.fingersMoviment = MEDIA_ABRE
+
+sign.symbol[0].rightHand.movement.speed = NORMAL
+sign.symbol[0].rightHand.movement.frequency = SIMPLES
+sign.symbol[0].rightHand.movement.locationAt = INICIO
+
+// StraightHandMovement
+sign.symbol[0].rightHand.movement.type = RETILINEO
+sign.symbol[0].rightHand.movement.segments[0].direction = PARA_CIMA
+sign.symbol[0].rightHand.movement.segments[0].magnitude = NORMAL
+
+sign.symbol[0].leftHand.shape = MAO_L_COM_O
+sign.symbol[0].leftHand.yaw = 180
+sign.symbol[0].leftHand.pitch = 0
+sign.symbol[0].leftHand.roll = 0
+
+sign.symbol[1].location = ESPACO_NEUTRO
+sign.symbol[1].leftHandResting = NAO
+
+sign.symbol[1].rightHand.shape = MAO_L_COM_C
+sign.symbol[1].rightHand.yaw = 180
+sign.symbol[1].rightHand.pitch = 0
+sign.symbol[1].rightHand.roll = 0
+sign.symbol[1].rightHand.fingersMoviment = MEDIA_FECHA
+
+sign.symbol[1].rightHand.movement.speed = NORMAL
+sign.symbol[1].rightHand.movement.frequency = SIMPLES
+sign.symbol[1].rightHand.movement.locationAt = INICIO
+
+// StraightHandMovement
+sign.symbol[1].rightHand.movement.type = RETILINEO
+sign.symbol[1].rightHand.movement.segments[1].direction = PARA_BAIXO
+sign.symbol[1].rightHand.movement.segments[1].magnitude = NORMAL
+
+sign.symbol[1].leftHand.shape = MAO_L_COM_O
+sign.symbol[1].leftHand.yaw = 180
+sign.symbol[1].leftHand.pitch = 0
+sign.symbol[1].leftHand.roll = 0
+sign.symbol[1].leftHand.fingersMoviment = MEDIA_ABRE
+
+sign.symbol[1].leftHand.movement.speed = NORMAL
+sign.symbol[1].leftHand.movement.frequency = SIMPLES
+sign.symbol[1].leftHand.movement.locationAt = INICIO
+
+// StraightHandMovement
+sign.symbol[1].leftHand.movement.type = RETILINEO
+sign.symbol[1].leftHand.movement.segments[1].direction = PARA_CIMA
+sign.symbol[1].leftHand.movement.segments[1].magnitude = NORMAL
+
+sign.symbol[2].location = ESPACO_NEUTRO
+sign.symbol[2].leftHandResting = 
+
+sign.symbol[2].rightHand.shape = MAO_L_COM_C
+sign.symbol[2].rightHand.yaw = 180
+sign.symbol[2].rightHand.pitch = 0
+sign.symbol[2].rightHand.roll = 0
+sign.symbol[2].rightHand.fingersMoviment = MEDIA_FECHA
+
+sign.symbol[2].rightHand.movement.speed = NORMAL
+sign.symbol[2].rightHand.movement.frequency = SIMPLES
+sign.symbol[2].rightHand.movement.locationAt = INICIO
+
+// StraightHandMovement
+sign.symbol[2].rightHand.movement.type = RETILINEO
+sign.symbol[2].rightHand.movement.segments[2].direction = PARA_CIMA
+sign.symbol[2].rightHand.movement.segments[2].magnitude = NORMAL
+
+sign.symbol[2].leftHand.shape = MAO_L_COM_O
+sign.symbol[2].leftHand.yaw = 180
+sign.symbol[2].leftHand.pitch = 0
+sign.symbol[2].leftHand.roll = 0
+sign.symbol[2].leftHand.fingersMoviment = MEDIA_ABRE
+
+sign.symbol[2].leftHand.movement.speed = NORMAL
+sign.symbol[2].leftHand.movement.frequency = SIMPLES
+sign.symbol[2].leftHand.movement.locationAt = INICIO
+
+// StraightHandMovement
+sign.symbol[2].leftHand.movement.type = RETILINEO
+sign.symbol[2].leftHand.movement.segments[2].direction = PARA_BAIXO
+sign.symbol[2].leftHand.movement.segments[2].magnitude = NORMAL
+

@@ -1,0 +1,49 @@
+sign.name = PROFESSOR
+
+sign.symbol[0].location = ESPACO_NEUTRO
+sign.symbol[0].leftHandResting = SIM
+
+sign.symbol[0].rightHand.shape = MAO_3
+sign.symbol[0].rightHand.yaw = 0
+sign.symbol[0].rightHand.pitch = 90
+sign.symbol[0].rightHand.roll = 45
+
+sign.symbol[0].rightHand.movement.speed = NORMAL
+sign.symbol[0].rightHand.movement.frequency = 1
+sign.symbol[0].rightHand.movement.locationAt = INICIO
+
+sign.symbol[1].location = ESPACO_NEUTRO
+sign.symbol[1].leftHandResting = SIM
+
+sign.symbol[1].rightHand.shape = MAO_3
+sign.symbol[1].rightHand.yaw = 0
+sign.symbol[1].rightHand.pitch = 90
+sign.symbol[1].rightHand.roll = -45
+
+sign.symbol[1].rightHand.movement.speed = NORMAL
+sign.symbol[1].rightHand.movement.frequency = 1
+sign.symbol[1].rightHand.movement.locationAt = FIM
+
+sign.symbol[2].location = ESPACO_NEUTRO
+sign.symbol[2].leftHandResting = SIM
+
+sign.symbol[2].rightHand.shape = MAO_3
+sign.symbol[2].rightHand.yaw = 0
+sign.symbol[2].rightHand.pitch = 90
+sign.symbol[2].rightHand.roll = -45
+
+sign.symbol[2].rightHand.movement.speed = NORMAL
+sign.symbol[2].rightHand.movement.frequency = 1
+sign.symbol[2].rightHand.movement.locationAt = INICIO
+
+sign.symbol[3].location = ESPACO_NEUTRO
+sign.symbol[3].leftHandResting = 
+
+sign.symbol[3].rightHand.shape = MAO_3
+sign.symbol[3].rightHand.yaw = 0
+sign.symbol[3].rightHand.pitch = 90
+sign.symbol[3].rightHand.roll = 45
+
+sign.symbol[3].rightHand.movement.speed = NORMAL
+sign.symbol[3].rightHand.movement.frequency = 1
+sign.symbol[3].rightHand.movement.locationAt = FIM

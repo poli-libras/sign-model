@@ -1,0 +1,19 @@
+sign.name = OUTUBRO
+
+sign.symbol[0].location = ESPACO_NEUTRO
+sign.symbol[0].leftHandResting = SIM
+
+sign.symbol[0].rightHand.shape = MAO_S
+sign.symbol[0].rightHand.yaw = 90
+sign.symbol[0].rightHand.pitch = 0
+sign.symbol[0].rightHand.roll = 0
+sign.symbol[0].rightHand.ShakeYaw = True
+
+
+
+
+
+
+
+
+
