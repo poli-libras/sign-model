@@ -1,0 +1,7 @@
+
+Para gerar o schema do xml das classes do modelo siga os passos:
+
+*  remova todas as anotações e declarações de import relacionadas ao JPA (Hibernate)
+*  execute o seguinte comando no diretório src: $schemagen br.usp.libras.xml.SignList 
+
+
