@@ -12,6 +12,11 @@ Esta modelagem é baseada na notação SignWriting, seguindo a sistematização 
 
 O primeiro estudo foca no contexto da LIBRAS, mas nós esperamos que esta modelagem possa se aplicar razoavelmente a outras línguas de sinais (talvez com algumas pequenas alterações).
 
+Modelo atual
+------------
+
+![Diagrama de classes do sign-model](https://raw.github.com/poli-libras/sign-model/master/doc/modelo_atual.png)
+
 Tecnologias
 -----------
 
