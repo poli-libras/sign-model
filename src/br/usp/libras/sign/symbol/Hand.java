@@ -48,7 +48,10 @@ public class Hand implements Serializable, Cloneable {
     @Enumerated(EnumType.STRING)
     private HandSide side;
     
-    private boolean shake;
+    private double yaw;
+    private double pitch;
+    private double roll;
+    private boolean shakeYaw;
 
     //// construtores, getters & setters
 
@@ -61,10 +64,14 @@ public class Hand implements Serializable, Cloneable {
         this.plane = HandPlane.VERTICAL;
         this.rotation = HandRotation.ZERO;
         this.side = HandSide.RIGHT;
+        yaw = 0;
+        pitch = 0;
+        roll = 0;
+        shakeYaw = false;
     }
 
     public Hand(HandSide side, HandShape shape, HandOrientation orientation, HandPlane plane, FingersMovement fingers,
-            HandMovement movement, boolean shake) {
+            HandMovement movement, double yaw, double pitch, double roll, boolean shakeYaw) {
 
         this.side = side;
         this.shape = shape;
@@ -72,7 +79,10 @@ public class Hand implements Serializable, Cloneable {
         this.plane = plane;
         this.fingers = fingers;
         this.movement = movement;
-        this.shake = shake;
+        this.yaw = yaw;
+        this.pitch = pitch;
+        this.roll = roll;
+        this.shakeYaw = shakeYaw;
     }
     
     public void invertMovement(){
@@ -83,7 +93,7 @@ public class Hand implements Serializable, Cloneable {
     
     public Hand copy(){
         HandMovement movcopy = this.movement==null ? null:movement.copy();
-        Hand copia = new Hand(side,shape,orientation,plane,fingers,movcopy,shake);
+        Hand copia = new Hand(side,shape,orientation,plane,fingers,movcopy,yaw, pitch, roll, shakeYaw);
         copia.side = copia.side.invert();
         return copia;
     }
@@ -96,19 +106,6 @@ public class Hand implements Serializable, Cloneable {
     private void setId(Long id) {
         this.id = id;
     }
-
-    /**
-     * It's used in signs like Ç and OUTUBRO
-     * 
-     * @return {@code shake} property
-     */
-    public boolean isShake() {
-		return shake;
-	}
-
-	public void setShake(boolean shake) {
-		this.shake = shake;
-	}
 
 	public HandShape getShape() {
         return shape;
@@ -137,6 +134,22 @@ public class Hand implements Serializable, Cloneable {
     public HandSide getSide() {
         return this.side;
     }
+    
+	public double getYaw() {
+		return yaw;
+	}
+
+	public double getPitch() {
+		return pitch;
+	}
+
+	public double getRoll() {
+		return roll;
+	}
+
+	public boolean isShakeYaw() {
+		return shakeYaw;
+	}
 
     public void setShape(HandShape handShape) {
         this.shape = handShape;
@@ -165,6 +178,23 @@ public class Hand implements Serializable, Cloneable {
     public void setSide(HandSide side) {
         this.side = side;
     }
+    
+	public void setYaw(double yaw) {
+		this.yaw = yaw;
+	}
+
+	public void setPitch(double pitch) {
+		this.pitch = pitch;
+	}
+
+	public void setRoll(double roll) {
+		this.roll = roll;
+	}
+
+	public void setShakeYaw(boolean shakeYaw) {
+		this.shakeYaw = shakeYaw;
+	}
+
 
 	@Override
 	public int hashCode() {
@@ -175,12 +205,19 @@ public class Hand implements Serializable, Cloneable {
 				+ ((movement == null) ? 0 : movement.hashCode());
 		result = prime * result
 				+ ((orientation == null) ? 0 : orientation.hashCode());
+		long temp;
+		temp = Double.doubleToLongBits(pitch);
+		result = prime * result + (int) (temp ^ (temp >>> 32));
 		result = prime * result + ((plane == null) ? 0 : plane.hashCode());
+		temp = Double.doubleToLongBits(roll);
+		result = prime * result + (int) (temp ^ (temp >>> 32));
 		result = prime * result
 				+ ((rotation == null) ? 0 : rotation.hashCode());
-		result = prime * result + (shake ? 1231 : 1237);
+		result = prime * result + (shakeYaw ? 1231 : 1237);
 		result = prime * result + ((shape == null) ? 0 : shape.hashCode());
 		result = prime * result + ((side == null) ? 0 : side.hashCode());
+		temp = Double.doubleToLongBits(yaw);
+		result = prime * result + (int) (temp ^ (temp >>> 32));
 		return result;
 	}
 
@@ -202,15 +239,23 @@ public class Hand implements Serializable, Cloneable {
 			return false;
 		if (orientation != other.orientation)
 			return false;
+		if (Double.doubleToLongBits(pitch) != Double
+				.doubleToLongBits(other.pitch))
+			return false;
 		if (plane != other.plane)
+			return false;
+		if (Double.doubleToLongBits(roll) != Double
+				.doubleToLongBits(other.roll))
 			return false;
 		if (rotation != other.rotation)
 			return false;
-		if (shake != other.shake)
+		if (shakeYaw != other.shakeYaw)
 			return false;
 		if (shape != other.shape)
 			return false;
 		if (side != other.side)
+			return false;
+		if (Double.doubleToLongBits(yaw) != Double.doubleToLongBits(other.yaw))
 			return false;
 		return true;
 	}
@@ -220,7 +265,8 @@ public class Hand implements Serializable, Cloneable {
 		return "Hand [id=" + id + ", shape=" + shape + ", orientation="
 				+ orientation + ", rotation=" + rotation + ", plane=" + plane
 				+ ", fingers=" + fingers + ", movement=" + movement + ", side="
-				+ side + ", shake=" + shake + "]";
+				+ side + ", yaw=" + yaw + ", pitch=" + pitch + ", roll=" + roll
+				+ ", shakeYaw=" + shakeYaw + "]";
 	}
 
 	@Override
