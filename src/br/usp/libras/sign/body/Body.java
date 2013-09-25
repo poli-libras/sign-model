@@ -32,7 +32,8 @@ public class Body implements Serializable, Cloneable {
     private Head head;
     
     public Body(){
-        
+        shoulder = Shoulder.NADA;
+        head = Head.NADA;
     }
 
     public Body(Long id, Shoulder shoulder, Head head) {
