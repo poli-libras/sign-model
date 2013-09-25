@@ -48,6 +48,13 @@ public class Hand implements Serializable, Cloneable {
     @Enumerated(EnumType.STRING)
     private HandSide side;
     
+    @Enumerated(EnumType.STRING)
+    private Location location; // ponto de articulação
+
+    @OneToOne(cascade=CascadeType.ALL)
+    private Contact contact;
+    
+    
     private double yaw;
     private double pitch;
     private double roll;
@@ -64,6 +71,7 @@ public class Hand implements Serializable, Cloneable {
         this.plane = HandPlane.VERTICAL;
         this.rotation = HandRotation.ZERO;
         this.side = HandSide.RIGHT;
+        this.location = Location.ESPACO_NEUTRO;
         yaw = 0;
         pitch = 0;
         roll = 0;
@@ -71,7 +79,7 @@ public class Hand implements Serializable, Cloneable {
     }
 
     public Hand(HandSide side, HandShape shape, HandOrientation orientation, HandPlane plane, FingersMovement fingers,
-            HandMovement movement, double yaw, double pitch, double roll, boolean shakeYaw) {
+            HandMovement movement, Location location, Contact contact, double yaw, double pitch, double roll, boolean shakeYaw) {
 
         this.side = side;
         this.shape = shape;
@@ -83,6 +91,8 @@ public class Hand implements Serializable, Cloneable {
         this.pitch = pitch;
         this.roll = roll;
         this.shakeYaw = shakeYaw;
+        this.location = location;
+        this.contact = contact;
     }
     
     public void invertMovement(){
@@ -93,7 +103,7 @@ public class Hand implements Serializable, Cloneable {
     
     public Hand copy(){
         HandMovement movcopy = this.movement==null ? null:movement.copy();
-        Hand copia = new Hand(side,shape,orientation,plane,fingers,movcopy,yaw, pitch, roll, shakeYaw);
+        Hand copia = new Hand(side,shape,orientation,plane,fingers,movcopy,location,contact,yaw, pitch, roll, shakeYaw);
         copia.side = copia.side.invert();
         return copia;
     }
@@ -151,7 +161,15 @@ public class Hand implements Serializable, Cloneable {
 		return shakeYaw;
 	}
 
-    public void setShape(HandShape handShape) {
+    public Location getLocation() {
+		return location;
+	}
+
+	public Contact getContact() {
+		return contact;
+	}
+
+	public void setShape(HandShape handShape) {
         this.shape = handShape;
     }
 
@@ -195,6 +213,13 @@ public class Hand implements Serializable, Cloneable {
 		this.shakeYaw = shakeYaw;
 	}
 
+	public void setLocation(Location location) {
+		this.location = location;
+	}
+
+	public void setContact(Contact contact) {
+		this.contact = contact;
+	}
 
 	@Override
 	public int hashCode() {
