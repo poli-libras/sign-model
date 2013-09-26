@@ -2,13 +2,24 @@ package br.usp.libras.sign.movement;
 
 import java.io.Serializable;
 
+import javax.persistence.DiscriminatorColumn;
+import javax.persistence.DiscriminatorType;
+import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.Inheritance;
+import javax.persistence.InheritanceType;
 
 @Entity
+@Inheritance(strategy=InheritanceType.SINGLE_TABLE)
+@DiscriminatorColumn(
+    name="segmenttype",
+    discriminatorType=DiscriminatorType.STRING
+)
+@DiscriminatorValue("Segment")
 public class Segment implements Serializable, Cloneable {
 	
 	private static final long serialVersionUID = -3526564305137423514L;
