@@ -29,10 +29,11 @@ import br.usp.libras.sign.face.Teeth;
 import br.usp.libras.sign.face.Tongue;
 import br.usp.libras.sign.movement.Direction;
 import br.usp.libras.sign.movement.Frequency;
-import br.usp.libras.sign.movement.HandMovement;
+import br.usp.libras.sign.movement.InterpolationType;
 import br.usp.libras.sign.movement.MovementLocationAt;
 import br.usp.libras.sign.movement.MovementType;
 import br.usp.libras.sign.movement.Speed;
+import br.usp.libras.sign.movement.StraightHandMovement;
 import br.usp.libras.sign.symbol.Contact;
 import br.usp.libras.sign.symbol.Hand;
 import br.usp.libras.sign.symbol.HandOrientation;
@@ -40,7 +41,6 @@ import br.usp.libras.sign.symbol.HandPlane;
 import br.usp.libras.sign.symbol.HandRotation;
 import br.usp.libras.sign.symbol.HandShape;
 import br.usp.libras.sign.symbol.HandSide;
-import br.usp.libras.sign.symbol.Location;
 import br.usp.libras.sign.symbol.Symbol;
 
 /**
@@ -78,8 +78,8 @@ public class XMLWriterParserTest {
         rightHand.setShape(HandShape.MAO_C);
         rightHand.setSide(HandSide.RIGHT);
 
-        HandMovement movement = new HandMovement(MovementType.RETILINIO, Direction.PARA_BAIXO, Speed.NORMAL,
-                Frequency.SIMPLES,  MovementLocationAt.INICIO, false);
+        StraightHandMovement movement = new StraightHandMovement(MovementType.RETILINIO, Direction.PARA_BAIXO, Speed.NORMAL,
+                Frequency.SIMPLES,  MovementLocationAt.INICIO, InterpolationType.NORMAL);
         movement.addSegment(Direction.PARA_DIREITA);
         rightHand.setMovement(movement);
 
@@ -88,9 +88,6 @@ public class XMLWriterParserTest {
 
         List<Symbol> symbols = new ArrayList<Symbol>();
         Symbol symbol = new Symbol();
-        symbol.setContact(Contact.NENHUM);
-        symbol.setHandsInUnity(true);
-        symbol.setLocation(Location.ESPACO_NEUTRO);
         symbol.setSequence(0);
         symbol.setLeftHand(leftHand);
         symbol.setRightHand(rightHand);
@@ -105,8 +102,6 @@ public class XMLWriterParserTest {
         rightHand2.setSide(HandSide.RIGHT);
 
         Symbol symbol2 = new Symbol();
-        symbol2.setContact(Contact.NENHUM);
-        symbol2.setLocation(Location.ESPACO_NEUTRO);
         symbol2.setSequence(1);
         symbol2.setRightHand(rightHand2);
         symbols.add(symbol2);
@@ -149,7 +144,7 @@ public class XMLWriterParserTest {
         assertEquals(rightHand.getShape(), genRightHand.getShape());
         assertEquals(rightHand.getSide(), genRightHand.getSide());
         
-        HandMovement genMovement = genRightHand.getMovement();
+        StraightHandMovement genMovement = (StraightHandMovement) genRightHand.getMovement();
         assertNotNull(genMovement);
         assertEquals(movement.getFrequency(), genMovement.getFrequency());
         assertEquals(movement.getSpeed(), genMovement.getSpeed());
@@ -163,12 +158,12 @@ public class XMLWriterParserTest {
         assertEquals(face.getEyes(), genFace.getEyes());
         assertEquals(face.getOthers(), genFace.getOthers());
 
-        assertEquals(symbol.getContact(), genSymbol1.getContact());
-        assertEquals(symbol.getLocation(), genSymbol1.getLocation());
+        assertEquals(symbol.getRightHand().getContact(), genSymbol1.getRightHand().getContact());
+        assertEquals(symbol.getRightHand().getLocation(), genSymbol1.getRightHand().getLocation());
         
         Symbol genSymbol2 = sign.getSymbols().get(1);
-        assertEquals(symbol2.getContact(), genSymbol2.getContact());
-        assertEquals(symbol2.getLocation(), genSymbol2.getLocation());
+        assertEquals(symbol2.getRightHand().getContact(), genSymbol2.getRightHand().getContact());
+        assertEquals(symbol2.getRightHand().getLocation(), genSymbol2.getRightHand().getLocation());
         
         Hand genRightHand2 = genSymbol2.getRightHand();
         

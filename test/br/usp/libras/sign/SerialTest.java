@@ -30,9 +30,11 @@ import br.usp.libras.sign.face.Tongue;
 import br.usp.libras.sign.movement.Direction;
 import br.usp.libras.sign.movement.Frequency;
 import br.usp.libras.sign.movement.HandMovement;
+import br.usp.libras.sign.movement.InterpolationType;
 import br.usp.libras.sign.movement.MovementLocationAt;
 import br.usp.libras.sign.movement.MovementType;
 import br.usp.libras.sign.movement.Speed;
+import br.usp.libras.sign.movement.StraightHandMovement;
 import br.usp.libras.sign.symbol.Contact;
 import br.usp.libras.sign.symbol.Hand;
 import br.usp.libras.sign.symbol.HandOrientation;
@@ -40,7 +42,6 @@ import br.usp.libras.sign.symbol.HandPlane;
 import br.usp.libras.sign.symbol.HandRotation;
 import br.usp.libras.sign.symbol.HandShape;
 import br.usp.libras.sign.symbol.HandSide;
-import br.usp.libras.sign.symbol.Location;
 import br.usp.libras.sign.symbol.Symbol;
 
 public class SerialTest {
@@ -75,8 +76,8 @@ public class SerialTest {
         rightHand.setShape(HandShape.MAO_C);
         rightHand.setSide(HandSide.RIGHT);
 
-        HandMovement movement = new HandMovement(MovementType.RETILINIO, Direction.PARA_BAIXO, Speed.NORMAL,
-                Frequency.SIMPLES, MovementLocationAt.INICIO, false);
+        HandMovement movement = new StraightHandMovement(MovementType.RETILINIO, Direction.PARA_BAIXO, Speed.NORMAL,
+                Frequency.SIMPLES, MovementLocationAt.INICIO, InterpolationType.NORMAL);
         movement.addSegment(Direction.PARA_DIREITA);
         rightHand.setMovement(movement);
 
@@ -85,9 +86,6 @@ public class SerialTest {
 
         List<Symbol> symbols = new ArrayList<Symbol>();
         Symbol symbol = new Symbol();
-        symbol.setContact(Contact.NENHUM);
-        symbol.setHandsInUnity(true);
-        symbol.setLocation(Location.ESPACO_NEUTRO);
         symbol.setSequence(0);
         symbol.setLeftHand(leftHand);
         symbol.setRightHand(rightHand);
@@ -102,8 +100,6 @@ public class SerialTest {
         rightHand2.setSide(HandSide.RIGHT);
 
         Symbol symbol2 = new Symbol();
-        symbol2.setContact(Contact.NENHUM);
-        symbol2.setLocation(Location.ESPACO_NEUTRO);
         symbol2.setSequence(1);
         symbol2.setRightHand(rightHand2);
         symbols.add(symbol2);
