@@ -40,9 +40,6 @@ public class Symbol implements Serializable, Cloneable {
     @OneToOne(cascade=CascadeType.ALL)
     private Hand leftHand; // seta branca
 
-    private boolean handsInUnity; // as duas mãos fazem o mesmo movimento juntas
-    							  // implica que leftRight.movment == null
-    
     private int sequence; // TODO: deveria ser transient ou XMLTransient?
     
 
@@ -50,12 +47,11 @@ public class Symbol implements Serializable, Cloneable {
     	
     }
 
-    public Symbol(Face face, Hand leftHand, Hand rightHand, boolean handsInUnity) {
+    public Symbol(Face face, Hand leftHand, Hand rightHand) {
 
         this.face = face;
         this.rightHand = rightHand;
         this.leftHand = leftHand;
-        this.handsInUnity = handsInUnity;
     }
 
     public Long getId() {
@@ -90,22 +86,6 @@ public class Symbol implements Serializable, Cloneable {
         this.leftHand = leftHand;
     }
 
-    /**
-     * {@code handsInUnity} says the two hands will be united in make the same movement.
-     * 
-     * This imply if {@code handsInUnity == true}, so {@code leftHand.movement == null}
-     * to avoid inconsistencies 
-     * 
-     * @return {@code handsInUnity} property
-     */
-    public boolean isHandsInUnity() {
-        return handsInUnity;
-    }
-
-    public void setHandsInUnity(boolean handsInUnity) {
-        this.handsInUnity = handsInUnity;
-    }
-
     public int getSequence() {
         return sequence;
     }
@@ -120,7 +100,6 @@ public class Symbol implements Serializable, Cloneable {
 		int result = 1;
 		result = prime * result + ((body == null) ? 0 : body.hashCode());
 		result = prime * result + ((face == null) ? 0 : face.hashCode());
-		result = prime * result + (handsInUnity ? 1231 : 1237);
 		result = prime * result
 				+ ((leftHand == null) ? 0 : leftHand.hashCode());
 		result = prime * result
@@ -147,8 +126,6 @@ public class Symbol implements Serializable, Cloneable {
 				return false;
 		} else if (!face.equals(other.face))
 			return false;
-		if (handsInUnity != other.handsInUnity)
-			return false;
 		if (leftHand == null) {
 			if (other.leftHand != null)
 				return false;
@@ -166,8 +143,7 @@ public class Symbol implements Serializable, Cloneable {
 	public String toString() {
 		return "Symbol [id=" + id + ", face=" + face + ", body=" + body
 				+ ", rightHand=" + rightHand + ", leftHand=" + leftHand
-				+ ", handsInUnity=" + handsInUnity + ", sequence=" + sequence
-				+ "]";
+				+ ", sequence=" + sequence + "]";
 	}
 
 	@Override
