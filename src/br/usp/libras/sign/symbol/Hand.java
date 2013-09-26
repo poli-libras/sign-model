@@ -76,6 +76,7 @@ public class Hand implements Serializable, Cloneable {
         pitch = 0;
         roll = 0;
         shakeYaw = false;
+        contact = new Contact();
     }
 
     public Hand(HandSide side, HandShape shape, HandOrientation orientation, HandPlane plane, FingersMovement fingers,
@@ -225,7 +226,10 @@ public class Hand implements Serializable, Cloneable {
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
+		result = prime * result + ((contact == null) ? 0 : contact.hashCode());
 		result = prime * result + ((fingers == null) ? 0 : fingers.hashCode());
+		result = prime * result
+				+ ((location == null) ? 0 : location.hashCode());
 		result = prime * result
 				+ ((movement == null) ? 0 : movement.hashCode());
 		result = prime * result
@@ -255,7 +259,14 @@ public class Hand implements Serializable, Cloneable {
 		if (getClass() != obj.getClass())
 			return false;
 		Hand other = (Hand) obj;
+		if (contact == null) {
+			if (other.contact != null)
+				return false;
+		} else if (!contact.equals(other.contact))
+			return false;
 		if (fingers != other.fingers)
+			return false;
+		if (location != other.location)
 			return false;
 		if (movement == null) {
 			if (other.movement != null)
@@ -290,7 +301,8 @@ public class Hand implements Serializable, Cloneable {
 		return "Hand [id=" + id + ", shape=" + shape + ", orientation="
 				+ orientation + ", rotation=" + rotation + ", plane=" + plane
 				+ ", fingers=" + fingers + ", movement=" + movement + ", side="
-				+ side + ", yaw=" + yaw + ", pitch=" + pitch + ", roll=" + roll
+				+ side + ", location=" + location + ", contact=" + contact
+				+ ", yaw=" + yaw + ", pitch=" + pitch + ", roll=" + roll
 				+ ", shakeYaw=" + shakeYaw + "]";
 	}
 
