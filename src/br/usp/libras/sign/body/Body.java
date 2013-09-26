@@ -8,7 +8,6 @@ import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
-
 /**
  * Classe que modela a expressão facial de línguas de sinais A descrição de suas enumerações está na apostila de
  * Signwriting, pg 165
@@ -97,4 +96,14 @@ public class Body implements Serializable, Cloneable {
 		return "Body [id=" + id + ", shoulder=" + shoulder + ", head=" + head
 				+ "]";
 	}
+	
+	@Override
+    public Body clone() {
+    	
+    	try {
+			return (Body) super.clone();
+		} catch (CloneNotSupportedException e) {
+			throw new AssertionError("Should not happen");
+		}
+    }
 }
