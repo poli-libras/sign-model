@@ -85,6 +85,13 @@ public class Symbol implements Serializable, Cloneable {
     public void setLeftHand(Hand leftHand) {
         this.leftHand = leftHand;
     }
+    
+    public Hand getHand (HandSide side) {
+    	if (side == HandSide.RIGHT)
+    		return getRightHand();
+    	else
+    		return getLeftHand();
+    }
 
     public int getSequence() {
         return sequence;
