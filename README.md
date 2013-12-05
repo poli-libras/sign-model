@@ -21,7 +21,6 @@ Tecnologias
 -----------
 
 Esta classes já são anotadas para o uso com a JPA e um arquivo de configuração do Hibernate já é também fornecido.
-A modelagem
 
 English description
 ---------------------
