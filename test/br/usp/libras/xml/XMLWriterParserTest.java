@@ -1,6 +1,8 @@
 package br.usp.libras.xml;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertNull;
 
 import java.io.File;
 import java.io.IOException;
@@ -34,7 +36,6 @@ import br.usp.libras.sign.movement.MovementLocationAt;
 import br.usp.libras.sign.movement.MovementType;
 import br.usp.libras.sign.movement.Speed;
 import br.usp.libras.sign.movement.StraightHandMovement;
-import br.usp.libras.sign.symbol.Contact;
 import br.usp.libras.sign.symbol.Hand;
 import br.usp.libras.sign.symbol.HandOrientation;
 import br.usp.libras.sign.symbol.HandPlane;

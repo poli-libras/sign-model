@@ -1,10 +1,7 @@
 package br.usp.libras.sign;
 
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.io.ObjectOutputStream;
 import java.io.Writer;
 import java.util.ArrayList;
 import java.util.List;
@@ -14,7 +11,7 @@ import javax.xml.bind.JAXBException;
 import br.usp.libras.xml.XMLWriter;
 
 /**
- * Gera a frase "VOCÊ OLHA FUTEBOL" em XMl e em forma serializada
+ * Gera a frase "VOCÊ OLHA FUTEBOL" em XML.
  * 
  * @author leonardo
  *
@@ -40,21 +37,6 @@ class GeraFrase {
 		} catch (IOException e) {
 			e.printStackTrace();
 		} catch (JAXBException e) {
-			e.printStackTrace();
-		}
-		
-		// gera forma serializada
-		
-		try {
-			FileOutputStream fos = new FileOutputStream("resources/test/frase.txt");
-			ObjectOutputStream objw = new ObjectOutputStream(fos);
-			Sign[] signs = frase.toArray(new Sign[0]);
-			objw.writeObject(signs);
-			objw.close();
-			fos.close();		
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
 			e.printStackTrace();
 		}
 		

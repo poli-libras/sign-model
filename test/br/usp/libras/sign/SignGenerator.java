@@ -18,7 +18,6 @@ import br.usp.libras.sign.movement.MovementType;
 import br.usp.libras.sign.movement.Segment;
 import br.usp.libras.sign.movement.Speed;
 import br.usp.libras.sign.movement.StraightHandMovement;
-import br.usp.libras.sign.symbol.Contact;
 import br.usp.libras.sign.symbol.Hand;
 import br.usp.libras.sign.symbol.HandOrientation;
 import br.usp.libras.sign.symbol.HandPlane;

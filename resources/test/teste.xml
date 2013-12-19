@@ -1,27 +1,44 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <ns2:signList xmlns:ns2="br.usp.libras.xml">
     <signs>
-        <inserted>2011-05-24T01:53:01.753-03:00</inserted>
+        <inserted>2013-12-19T18:46:04.877-02:00</inserted>
         <name>FELIZ</name>
         <symbols>
-            <contact>NENHUM</contact>
-            <handsInUnity>true</handsInUnity>
             <leftHand>
+                <contact>
+                    <location>ESPACO_NEUTRO</location>
+                    <quantity>0</quantity>
+                    <type>NENHUM</type>
+                </contact>
                 <fingers>NENHUM</fingers>
+                <location>ESPACO_NEUTRO</location>
                 <orientation>HALF</orientation>
+                <pitch>0.0</pitch>
                 <plane>VERTICAL</plane>
+                <roll>0.0</roll>
                 <rotation>ZERO</rotation>
+                <shakeYaw>false</shakeYaw>
                 <shape>MAO_C</shape>
                 <side>LEFT</side>
+                <yaw>0.0</yaw>
             </leftHand>
-            <location>ESPACO_NEUTRO</location>
             <rightHand>
+                <contact>
+                    <location>ESPACO_NEUTRO</location>
+                    <quantity>0</quantity>
+                    <type>NENHUM</type>
+                </contact>
                 <fingers>NENHUM</fingers>
+                <location>ESPACO_NEUTRO</location>
                 <orientation>HALF</orientation>
+                <pitch>0.0</pitch>
                 <plane>VERTICAL</plane>
+                <roll>0.0</roll>
                 <rotation>ZERO</rotation>
+                <shakeYaw>false</shakeYaw>
                 <shape>MAO_C</shape>
                 <side>RIGHT</side>
+                <yaw>0.0</yaw>
             </rightHand>
             <sequence>0</sequence>
         </symbols>
@@ -36,8 +53,39 @@
         </words>
     </signs>
     <signs>
-        <inserted>2011-05-24T01:53:01.753-03:00</inserted>
+        <inserted>2013-12-19T18:46:04.877-02:00</inserted>
         <name>OLHAR</name>
+        <symbols>
+            <rightHand>
+                <contact>
+                    <location>ESPACO_NEUTRO</location>
+                    <quantity>0</quantity>
+                    <type>NENHUM</type>
+                </contact>
+                <fingers>NENHUM</fingers>
+                <location>OLHOS</location>
+                <movement>
+                    <frequency>SIMPLES</frequency>
+                    <locationAt>INICIO</locationAt>
+                    <segments>
+                        <direction>PARA_FRENTE</direction>
+                        <magnitude>NORMAL</magnitude>
+                        <sequence>0</sequence>
+                    </segments>
+                    <speed>NORMAL</speed>
+                </movement>
+                <orientation>BLACK</orientation>
+                <pitch>0.0</pitch>
+                <plane>VERTICAL</plane>
+                <roll>0.0</roll>
+                <rotation>ZERO</rotation>
+                <shakeYaw>false</shakeYaw>
+                <shape>MAO_2</shape>
+                <side>RIGHT</side>
+                <yaw>0.0</yaw>
+            </rightHand>
+            <sequence>0</sequence>
+        </symbols>
         <verbType>NAO_VERBO</verbType>
         <words>
             <id>2</id>

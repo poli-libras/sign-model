@@ -1,27 +1,44 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <ns2:signList xmlns:ns2="br.usp.libras.xml">
     <signs>
-        <inserted>2011-05-23T01:37:25.340-03:00</inserted>
+        <inserted>2013-12-19T18:45:50.364-02:00</inserted>
         <name>FELIZ</name>
         <symbols>
-            <contact>NENHUM</contact>
-            <handsInUnity>true</handsInUnity>
             <leftHand>
+                <contact>
+                    <location>ESPACO_NEUTRO</location>
+                    <quantity>0</quantity>
+                    <type>NENHUM</type>
+                </contact>
                 <fingers>NENHUM</fingers>
+                <location>ESPACO_NEUTRO</location>
                 <orientation>HALF</orientation>
+                <pitch>0.0</pitch>
                 <plane>VERTICAL</plane>
+                <roll>0.0</roll>
                 <rotation>ZERO</rotation>
+                <shakeYaw>false</shakeYaw>
                 <shape>MAO_C</shape>
                 <side>LEFT</side>
+                <yaw>0.0</yaw>
             </leftHand>
-            <location>ESPACO_NEUTRO</location>
             <rightHand>
+                <contact>
+                    <location>ESPACO_NEUTRO</location>
+                    <quantity>0</quantity>
+                    <type>NENHUM</type>
+                </contact>
                 <fingers>NENHUM</fingers>
+                <location>ESPACO_NEUTRO</location>
                 <orientation>HALF</orientation>
+                <pitch>0.0</pitch>
                 <plane>VERTICAL</plane>
+                <roll>0.0</roll>
                 <rotation>ZERO</rotation>
+                <shakeYaw>false</shakeYaw>
                 <shape>MAO_C</shape>
                 <side>RIGHT</side>
+                <yaw>0.0</yaw>
             </rightHand>
             <sequence>0</sequence>
         </symbols>
