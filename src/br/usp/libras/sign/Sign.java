@@ -47,6 +47,8 @@ public class Sign implements Serializable, Cloneable {
     
     @Enumerated(EnumType.STRING)
     private VerbType verbType;
+    
+    private String dialeto;
 
     public Sign() {
     	
@@ -142,8 +144,16 @@ public class Sign implements Serializable, Cloneable {
     public void setVerbType(VerbType verbType) {
         this.verbType = verbType;
     }
+    
+    public String getDialeto() {
+		return dialeto;
+	}
 
-    @Override
+	public void setDialeto(String dialeto) {
+		this.dialeto = dialeto;
+	}
+
+	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;

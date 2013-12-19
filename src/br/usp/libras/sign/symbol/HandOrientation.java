@@ -9,14 +9,16 @@ package br.usp.libras.sign.symbol;
  */
 public enum HandOrientation {
 
-    WHITE("Palma para o emissor"), // palma da mão voltada para o emissor
-    HALF("Palma de lado"), // palma virada pela metade
-    BLACK("Palma contra o emissor"); // palma da mão voltada para o receptor
+    WHITE("Palma para o emissor", 0), // palma da mão voltada para o emissor
+    HALF("Palma de lado", Math.PI/2), // palma virada pela metade
+    BLACK("Palma contra o emissor", Math.PI); // palma da mão voltada para o receptor
 
     private String string;
+    private double angule;
 
-    private HandOrientation(String string) {
+    private HandOrientation(String string, double angule) {
         this.string = string;
+        this.angule = angule;
     }
 
     @Override
@@ -28,15 +30,8 @@ public enum HandOrientation {
         return this.string;
     }
 
-    public HandOrientation invert() {
-        switch(this) {
-            case WHITE:
-                return BLACK;
-            case BLACK:
-                return WHITE;
-            default:
-                return this;
-        }
-    }
-
+	public double getAngule() {
+		return angule;
+	}
+	
 }
