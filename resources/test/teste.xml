@@ -1,59 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <ns2:signList xmlns:ns2="br.usp.libras.xml">
     <signs>
-        <inserted>2013-12-19T18:46:04.877-02:00</inserted>
-        <name>FELIZ</name>
-        <symbols>
-            <leftHand>
-                <contact>
-                    <location>ESPACO_NEUTRO</location>
-                    <quantity>0</quantity>
-                    <type>NENHUM</type>
-                </contact>
-                <fingers>NENHUM</fingers>
-                <location>ESPACO_NEUTRO</location>
-                <orientation>HALF</orientation>
-                <pitch>0.0</pitch>
-                <plane>VERTICAL</plane>
-                <roll>0.0</roll>
-                <rotation>ZERO</rotation>
-                <shakeYaw>false</shakeYaw>
-                <shape>MAO_C</shape>
-                <side>LEFT</side>
-                <yaw>0.0</yaw>
-            </leftHand>
-            <rightHand>
-                <contact>
-                    <location>ESPACO_NEUTRO</location>
-                    <quantity>0</quantity>
-                    <type>NENHUM</type>
-                </contact>
-                <fingers>NENHUM</fingers>
-                <location>ESPACO_NEUTRO</location>
-                <orientation>HALF</orientation>
-                <pitch>0.0</pitch>
-                <plane>VERTICAL</plane>
-                <roll>0.0</roll>
-                <rotation>ZERO</rotation>
-                <shakeYaw>false</shakeYaw>
-                <shape>MAO_C</shape>
-                <side>RIGHT</side>
-                <yaw>0.0</yaw>
-            </rightHand>
-            <sequence>0</sequence>
-        </symbols>
-        <verbType>NAO_VERBO</verbType>
-        <words>
-            <id>1</id>
-            <word>bola</word>
-        </words>
-        <words>
-            <id>2</id>
-            <word>pelota</word>
-        </words>
-    </signs>
-    <signs>
-        <inserted>2013-12-19T18:46:04.877-02:00</inserted>
+        <inserted>2016-04-19T19:39:58.538-03:00</inserted>
         <name>OLHAR</name>
         <symbols>
             <rightHand>
@@ -73,16 +21,14 @@
                         <sequence>0</sequence>
                     </segments>
                     <speed>NORMAL</speed>
+                    <type>RETILINIO</type>
                 </movement>
-                <orientation>BLACK</orientation>
                 <pitch>0.0</pitch>
-                <plane>VERTICAL</plane>
                 <roll>0.0</roll>
-                <rotation>ZERO</rotation>
                 <shakeYaw>false</shakeYaw>
                 <shape>MAO_2</shape>
                 <side>RIGHT</side>
-                <yaw>0.0</yaw>
+                <yaw>3.141592653589793</yaw>
             </rightHand>
             <sequence>0</sequence>
         </symbols>
@@ -94,6 +40,20 @@
         <words>
             <id>1</id>
             <word>olhar</word>
+        </words>
+    </signs>
+    <signs>
+        <inserted>2016-04-19T19:39:58.538-03:00</inserted>
+        <symbols>
+            <face>
+                <others>EXPRESSAO_RADIANTE</others>
+            </face>
+            <sequence>0</sequence>
+        </symbols>
+        <verbType>NAO_VERBO</verbType>
+        <words>
+            <id>1</id>
+            <word>feliz</word>
         </words>
     </signs>
 </ns2:signList>

@@ -34,7 +34,7 @@ import javax.persistence.InheritanceType;
     discriminatorType=DiscriminatorType.STRING
 )
 @DiscriminatorValue("HandMovement")
-public abstract class HandMovement implements Serializable, Cloneable {
+public class HandMovement implements Serializable, Cloneable {
 
 	private static final long serialVersionUID = 120206039218764315L;
 	
@@ -194,7 +194,10 @@ public abstract class HandMovement implements Serializable, Cloneable {
         this.segments.add(segment);
 	}
 	
-	public abstract void addSegment(Direction direction);
+	public void addSegment(Direction direction) {
+	}
     
-    public abstract HandMovement copy();
+    public HandMovement copy() {
+		return null;
+	}
 }
