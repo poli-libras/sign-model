@@ -10,7 +10,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.OneToOne;
 
-import br.usp.libras.sign.movement.StraightHandMovement;
+import br.usp.libras.sign.movement.HandMovement;
 
 /**
  * Classe que modela uma mão de um sinal
@@ -37,7 +37,7 @@ public class Hand implements Serializable, Cloneable {
     private FingersMovement fingers;
 
     @OneToOne(cascade=CascadeType.ALL)
-    private StraightHandMovement movement;
+    private HandMovement movement;
     
     @Enumerated(EnumType.STRING)
     private Location location; // ponto de articulação
@@ -68,7 +68,7 @@ public class Hand implements Serializable, Cloneable {
     }
 
     public Hand(HandSide side, HandShape shape, FingersMovement fingers,
-            StraightHandMovement movement, Location location, Contact contact, 
+            HandMovement movement, Location location, Contact contact, 
             double yaw, double pitch, double roll, boolean shakeYaw) {
 
         this.side = side;
@@ -94,7 +94,7 @@ public class Hand implements Serializable, Cloneable {
     
     
     public Hand copy(){
-        StraightHandMovement movcopy = this.movement==null ? null:(StraightHandMovement) movement.copy();
+        HandMovement movcopy = this.movement==null ? null:(HandMovement) movement.copy();
         Hand copia = new Hand(side,shape,fingers,movcopy,location,contact,yaw, pitch, roll, shakeYaw);
         copia.side = copia.side.invert();
         return copia;
@@ -117,7 +117,7 @@ public class Hand implements Serializable, Cloneable {
         return fingers;
     }
 
-    public StraightHandMovement getMovement() {
+    public HandMovement getMovement() {
         return movement;
     }
 
@@ -157,7 +157,7 @@ public class Hand implements Serializable, Cloneable {
         this.fingers = fingers;
     }
 
-    public void setMovement(StraightHandMovement movement) {
+    public void setMovement(HandMovement movement) {
         this.movement = movement;
     }
 
@@ -266,7 +266,7 @@ public class Hand implements Serializable, Cloneable {
     	try {
 			Hand h = (Hand) super.clone();
 			if (this.movement != null)
-				h.movement = (StraightHandMovement) this.movement.clone();
+				h.movement = (HandMovement) this.movement.clone();
 			return h;
 		} catch (CloneNotSupportedException e) {
 			throw new AssertionError("Should not happen");

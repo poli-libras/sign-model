@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <ns2:signList xmlns:ns2="br.usp.libras.xml">
     <signs>
-        <inserted>2016-04-19T19:39:58.538-03:00</inserted>
+        <inserted>2016-04-27T15:08:18.057-03:00</inserted>
         <name>OLHAR</name>
         <symbols>
             <rightHand>
@@ -13,15 +13,12 @@
                 <fingers>NENHUM</fingers>
                 <location>OLHOS</location>
                 <movement>
-                    <frequency>SIMPLES</frequency>
-                    <locationAt>INICIO</locationAt>
                     <segments>
                         <direction>PARA_FRENTE</direction>
                         <magnitude>NORMAL</magnitude>
                         <sequence>0</sequence>
                     </segments>
-                    <speed>NORMAL</speed>
-                    <type>RETILINIO</type>
+                    <startsInLocation>false</startsInLocation>
                 </movement>
                 <pitch>0.0</pitch>
                 <roll>0.0</roll>
@@ -43,7 +40,7 @@
         </words>
     </signs>
     <signs>
-        <inserted>2016-04-19T19:39:58.538-03:00</inserted>
+        <inserted>2016-04-27T15:08:18.057-03:00</inserted>
         <symbols>
             <face>
                 <others>EXPRESSAO_RADIANTE</others>

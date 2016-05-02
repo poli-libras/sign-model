@@ -51,6 +51,11 @@ public class HandMovement implements Serializable, Cloneable {
     @Enumerated(EnumType.STRING)
     protected MovementLocationAt locationAt;
     
+    @Enumerated(EnumType.STRING)
+    protected MovementType type;
+    
+    protected boolean startsInLocation;
+    
     @OneToMany(cascade={CascadeType.ALL})
     @OrderBy(value="sequence")
     protected List<Segment> segments = new ArrayList<Segment>();
@@ -91,12 +96,27 @@ public class HandMovement implements Serializable, Cloneable {
         this.locationAt = locationAt;
     }
     
+	public boolean isStartsInLocation() {
+        return startsInLocation;
+    }
+
+    public void setStartsInLocation(boolean startsInLocation) {
+        this.startsInLocation = startsInLocation;
+    }
+    
 	public List<Segment> getSegments() {
         return segments;
     }
 
     public void setSegments(List<Segment> segments) {
         this.segments = segments;
+    }
+    public MovementType getType() {
+        return type;
+    }
+
+    public void setType(MovementType type) {
+        this.type = type;
     }
     
     public void invert(){
@@ -124,6 +144,7 @@ public class HandMovement implements Serializable, Cloneable {
 		result = prime * result
 				+ ((segments == null) ? 0 : segments.hashCode());
 		result = prime * result + ((speed == null) ? 0 : speed.hashCode());
+		result = prime * result + ((type == null) ? 0 : type.hashCode());
 		return result;
 	}
 
@@ -149,6 +170,8 @@ public class HandMovement implements Serializable, Cloneable {
 			return false;
 		if (speed != other.speed)
 			return false;
+		if (type != other.type)
+			return false;
 		return true;
 	}
 	
@@ -156,7 +179,7 @@ public class HandMovement implements Serializable, Cloneable {
 	public String toString() {
 		return "HandMovement [id=" + id + ", speed=" + speed + ", frequency="
 				+ frequency + ", locationAt=" + locationAt + ", segments="
-				+ segments + ", interpolation=" + interpolation + "]";
+				+ segments + ", type=" + type +", interpolation=" + interpolation + "]";
 	}
 
 	@Override
@@ -182,6 +205,7 @@ public class HandMovement implements Serializable, Cloneable {
         copia.frequency=this.frequency;
         copia.locationAt=this.locationAt;
         copia.segments=new ArrayList<Segment>();
+        copia.type=this.type;
         copia.interpolation=this.interpolation;
         for(Segment seg:this.segments)
             copia.segments.add(seg.clone());

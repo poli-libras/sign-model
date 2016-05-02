@@ -17,7 +17,7 @@ import br.usp.libras.sign.movement.MovementLocationAt;
 import br.usp.libras.sign.movement.MovementType;
 import br.usp.libras.sign.movement.Segment;
 import br.usp.libras.sign.movement.Speed;
-import br.usp.libras.sign.movement.StraightHandMovement;
+import br.usp.libras.sign.movement.HandMovement;
 import br.usp.libras.sign.symbol.Hand;
 import br.usp.libras.sign.symbol.HandOrientation;
 import br.usp.libras.sign.symbol.HandPlane;
@@ -89,7 +89,7 @@ public class SignGenerator {
         List<Segment> segs = new ArrayList<Segment>();
         segs.add(seg);
         
-        StraightHandMovement mov = new StraightHandMovement();
+        HandMovement mov = new HandMovement();
         mov.setFrequency(Frequency.SIMPLES);
         mov.setSpeed(Speed.NORMAL);
         mov.setLocationAt(MovementLocationAt.INICIO);
@@ -151,7 +151,7 @@ public class SignGenerator {
         rightHand.setShape(HandShape.MAO_ONZE);
         rightHand.setPitch(HandPlane.HORIZONTAL.getAngule());
         
-        mov = new StraightHandMovement();
+        mov = new HandMovement();
         mov.setSpeed(Speed.RAPIDO);
         segs = new ArrayList<Segment>();
         Segment seg1 = new Segment();
@@ -176,7 +176,7 @@ public class SignGenerator {
         leftHand.setShape(HandShape.MAO_ONZE);
         leftHand.setPitch(HandPlane.HORIZONTAL.getAngule());
 
-        mov = new StraightHandMovement();
+        mov = new HandMovement();
         mov.setSpeed(Speed.RAPIDO);
         segs = new ArrayList<Segment>();
         seg1 = new Segment();
@@ -218,7 +218,7 @@ public class SignGenerator {
         rightHand.setPitch(HandPlane.VERTICAL.getAngule());
         rightHand.setLocation(Location.OLHOS);
         
-        mov = new StraightHandMovement();
+        mov = new HandMovement();
         segs = new ArrayList<Segment>();
         seg = new Segment();
         seg.setDirection(Direction.PARA_FRENTE);
