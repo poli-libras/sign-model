@@ -46,9 +46,9 @@ public class Hand implements Serializable, Cloneable {
     private Contact contact;
     
     // raw, pitch, raw em radianos
-    private double yaw; // antiga orientação
-    private double pitch; // antigo plano 
-    private double roll; // antiga rotação
+    private double rotY; // antiga orientação
+    private double rotX; // antigo plano 
+    private double rotZ; // antiga rotação
     
     private boolean shakeYaw;
 
@@ -60,24 +60,24 @@ public class Hand implements Serializable, Cloneable {
         // (orientation, plane, rotation, side) => o padrão é a "soletração" 
         this.side = HandSide.RIGHT;
         this.location = Location.ESPACO_NEUTRO;
-        yaw = 0;
-        pitch = 0;
-        roll = 0;
+        rotY = 0;
+        rotX = 0;
+        rotZ = 0;
         shakeYaw = false;
         contact = new Contact();
     }
 
     public Hand(HandSide side, HandShape shape, FingersMovement fingers,
             HandMovement movement, Location location, Contact contact, 
-            double yaw, double pitch, double roll, boolean shakeYaw) {
+            double rotY, double rotX, double rotZ, boolean shakeYaw) {
 
         this.side = side;
         this.shape = shape;
         this.fingers = fingers;
         this.movement = movement;
-        this.yaw = yaw;
-        this.pitch = pitch;
-        this.roll = roll;
+        this.rotY = rotY;
+        this.rotX = rotX;
+        this.rotZ = rotZ;
         this.shakeYaw = shakeYaw;
         this.location = location;
         this.contact = contact;
@@ -89,13 +89,13 @@ public class Hand implements Serializable, Cloneable {
     }
 
 	private void invertYaw() {
-		this.yaw = ( this.yaw + Math.PI ) % (2*Math.PI);
+		this.rotY = (( this.rotY + Math.PI ) % (2*Math.PI));
 	}
     
     
     public Hand copy(){
         HandMovement movcopy = this.movement==null ? null:(HandMovement) movement.copy();
-        Hand copia = new Hand(side,shape,fingers,movcopy,location,contact,yaw, pitch, roll, shakeYaw);
+        Hand copia = new Hand(side,shape,fingers,movcopy,location,contact,rotY, rotX, rotZ, shakeYaw);
         copia.side = copia.side.invert();
         return copia;
     }
@@ -125,16 +125,16 @@ public class Hand implements Serializable, Cloneable {
         return this.side;
     }
     
-	public double getYaw() {
-		return yaw;
+	public double getRotY() {
+		return rotY;
 	}
 
-	public double getPitch() {
-		return pitch;
+	public double getRotX() {
+		return rotX;
 	}
 
-	public double getRoll() {
-		return roll;
+	public double getRotZ() {
+		return rotZ;
 	}
 
 	public boolean isShakeYaw() {
@@ -165,16 +165,16 @@ public class Hand implements Serializable, Cloneable {
         this.side = side;
     }
     
-	public void setYaw(double yaw) {
-		this.yaw = yaw;
+	public void setRotY(double rotY) {
+		this.rotY = rotY;
 	}
 
-	public void setPitch(double pitch) {
-		this.pitch = pitch;
+	public void setRotX(double rotX) {
+		this.rotX = rotX;
 	}
 
-	public void setRoll(double roll) {
-		this.roll = roll;
+	public void setRotZ(double rotZ) {
+		this.rotZ = rotZ;
 	}
 
 	public void setShakeYaw(boolean shakeYaw) {
@@ -200,14 +200,14 @@ public class Hand implements Serializable, Cloneable {
 		result = prime * result
 				+ ((movement == null) ? 0 : movement.hashCode());
 		long temp;
-		temp = Double.doubleToLongBits(pitch);
+		temp = Double.doubleToLongBits(rotX);
 		result = prime * result + (int) (temp ^ (temp >>> 32));
-		temp = Double.doubleToLongBits(roll);
+		temp = Double.doubleToLongBits(rotZ);
 		result = prime * result + (int) (temp ^ (temp >>> 32));
 		result = prime * result + (shakeYaw ? 1231 : 1237);
 		result = prime * result + ((shape == null) ? 0 : shape.hashCode());
 		result = prime * result + ((side == null) ? 0 : side.hashCode());
-		temp = Double.doubleToLongBits(yaw);
+		temp = Double.doubleToLongBits(rotY);
 		result = prime * result + (int) (temp ^ (temp >>> 32));
 		return result;
 	}
@@ -235,11 +235,11 @@ public class Hand implements Serializable, Cloneable {
 				return false;
 		} else if (!movement.equals(other.movement))
 			return false;
-		if (Double.doubleToLongBits(pitch) != Double
-				.doubleToLongBits(other.pitch))
+		if (Double.doubleToLongBits(rotX) != Double
+				.doubleToLongBits(other.rotX))
 			return false;
-		if (Double.doubleToLongBits(roll) != Double
-				.doubleToLongBits(other.roll))
+		if (Double.doubleToLongBits(rotZ) != Double
+				.doubleToLongBits(other.rotZ))
 			return false;
 		if (shakeYaw != other.shakeYaw)
 			return false;
@@ -247,7 +247,7 @@ public class Hand implements Serializable, Cloneable {
 			return false;
 		if (side != other.side)
 			return false;
-		if (Double.doubleToLongBits(yaw) != Double.doubleToLongBits(other.yaw))
+		if (Double.doubleToLongBits(rotY) != Double.doubleToLongBits(other.rotY))
 			return false;
 		return true;
 	}
@@ -257,7 +257,7 @@ public class Hand implements Serializable, Cloneable {
 		return "Hand [id=" + id + ", side=" + side + ", shape=" + shape
 				+ ", fingers=" + fingers + ", movement=" + movement
 				+ ", location=" + location + ", contact=" + contact + ", yaw="
-				+ yaw + ", pitch=" + pitch + ", roll=" + roll + ", shakeYaw="
+				+ rotY + ", pitch=" + rotX + ", roll=" + rotZ + ", shakeYaw="
 				+ shakeYaw + "]";
 	}
 

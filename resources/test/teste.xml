@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <ns2:signList xmlns:ns2="br.usp.libras.xml">
     <signs>
-        <inserted>2016-04-27T15:08:18.057-03:00</inserted>
+        <inserted>2016-05-18T17:48:09.042-03:00</inserted>
         <name>OLHAR</name>
         <symbols>
             <rightHand>
@@ -20,12 +20,12 @@
                     </segments>
                     <startsInLocation>false</startsInLocation>
                 </movement>
-                <pitch>0.0</pitch>
-                <roll>0.0</roll>
+                <rotX>0.0</rotX>
+                <rotY>3.141592653589793</rotY>
+                <rotZ>0.0</rotZ>
                 <shakeYaw>false</shakeYaw>
                 <shape>MAO_2</shape>
                 <side>RIGHT</side>
-                <yaw>3.141592653589793</yaw>
             </rightHand>
             <sequence>0</sequence>
         </symbols>
@@ -40,7 +40,7 @@
         </words>
     </signs>
     <signs>
-        <inserted>2016-04-27T15:08:18.057-03:00</inserted>
+        <inserted>2016-05-18T17:48:09.042-03:00</inserted>
         <symbols>
             <face>
                 <others>EXPRESSAO_RADIANTE</others>

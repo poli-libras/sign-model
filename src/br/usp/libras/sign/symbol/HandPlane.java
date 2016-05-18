@@ -10,7 +10,7 @@ package br.usp.libras.sign.symbol;
 public enum HandPlane {
 
 	VERTICAL(0),	// sinal por inteiro no SignWrite
-	HORIZONTAL(Math.PI/2); // sinal "cortado" no SignWrite
+	HORIZONTAL (Math.PI/2); // sinal "cortado" no SignWrite
 	
 	private double angule;
 

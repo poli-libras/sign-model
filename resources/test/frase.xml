@@ -13,14 +13,14 @@
                 <fingers>NENHUM</fingers>
                 <location>ESPACO_NEUTRO</location>
                 <orientation>BLACK</orientation>
-                <pitch>0.0</pitch>
+                <rotX>0.0</rotX>
                 <plane>HORIZONTAL</plane>
-                <roll>0.0</roll>
+                <rotZ>0.0</rotZ>
                 <rotation>ZERO</rotation>
                 <shakeYaw>false</shakeYaw>
                 <shape>INDICADOR</shape>
                 <side>RIGHT</side>
-                <yaw>0.0</yaw>
+                <rotY>0.0</rotY>
             </rightHand>
             <sequence>0</sequence>
         </symbols>
@@ -57,14 +57,14 @@
                     <speed>NORMAL</speed>
                 </movement>
                 <orientation>BLACK</orientation>
-                <pitch>0.0</pitch>
+                <rotX>0.0</rotX>
                 <plane>VERTICAL</plane>
-                <roll>0.0</roll>
+                <rotZ>0.0</rotZ>
                 <rotation>ZERO</rotation>
                 <shakeYaw>false</shakeYaw>
                 <shape>MAO_2</shape>
                 <side>RIGHT</side>
-                <yaw>0.0</yaw>
+                <rotY>0.0</rotY>
             </rightHand>
             <sequence>0</sequence>
         </symbols>
@@ -116,14 +116,14 @@
                     <speed>RAPIDO</speed>
                 </movement>
                 <orientation>HALF</orientation>
-                <pitch>0.0</pitch>
+                <rotX>0.0</rotX>
                 <plane>HORIZONTAL</plane>
-                <roll>0.0</roll>
+                <rotZ>0.0</rotZ>
                 <rotation>ZERO</rotation>
                 <shakeYaw>false</shakeYaw>
                 <shape>MAO_ONZE</shape>
                 <side>LEFT</side>
-                <yaw>0.0</yaw>
+                <rotY>0.0</rotY>
             </leftHand>
             <rightHand>
                 <contact>
@@ -159,14 +159,14 @@
                     <speed>RAPIDO</speed>
                 </movement>
                 <orientation>HALF</orientation>
-                <pitch>0.0</pitch>
+                <rotX>0.0</rotX>
                 <plane>HORIZONTAL</plane>
-                <roll>0.0</roll>
+                <rotZ>0.0</rotZ>
                 <rotation>ZERO</rotation>
                 <shakeYaw>false</shakeYaw>
                 <shape>MAO_ONZE</shape>
                 <side>RIGHT</side>
-                <yaw>0.0</yaw>
+                <rotY>0.0</rotY>
             </rightHand>
             <sequence>0</sequence>
         </symbols>

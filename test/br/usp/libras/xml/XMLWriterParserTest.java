@@ -66,16 +66,16 @@ public class XMLWriterParserTest {
         sign.setWords(words);
 
         Hand leftHand = new Hand();
-        leftHand.setYaw(HandOrientation.HALF.getAngule());
-        leftHand.setPitch(HandPlane.VERTICAL.getAngule());
-        leftHand.setRoll(HandRotation.ZERO.getAngule());
+        leftHand.setRotY(HandOrientation.HALF.getAngule());
+        leftHand.setRotX(HandPlane.VERTICAL.getAngule());
+        leftHand.setRotZ(HandRotation.ZERO.getAngule());
         leftHand.setShape(HandShape.MAO_C);
         leftHand.setSide(HandSide.LEFT);
 
         Hand rightHand = new Hand();
-        rightHand.setYaw(HandOrientation.HALF.getAngule());
-        rightHand.setPitch(HandPlane.VERTICAL.getAngule());
-        rightHand.setRoll(HandRotation.ZERO.getAngule());
+        rightHand.setRotY(HandOrientation.HALF.getAngule());
+        rightHand.setRotX(HandPlane.VERTICAL.getAngule());
+        rightHand.setRotZ(HandRotation.ZERO.getAngule());
         rightHand.setShape(HandShape.MAO_C);
         rightHand.setSide(HandSide.RIGHT);
 
@@ -96,9 +96,9 @@ public class XMLWriterParserTest {
         symbols.add(symbol);
 
         Hand rightHand2 = new Hand();
-        rightHand2.setYaw(HandOrientation.BLACK.getAngule());
-        rightHand2.setPitch(HandPlane.VERTICAL.getAngule());
-        rightHand2.setRoll(HandRotation.ZERO.getAngule());
+        rightHand2.setRotY(HandOrientation.BLACK.getAngule());
+        rightHand2.setRotX(HandPlane.VERTICAL.getAngule());
+        rightHand2.setRotZ(HandRotation.ZERO.getAngule());
         rightHand2.setShape(HandShape.MAO_C);
         rightHand2.setSide(HandSide.RIGHT);
 
@@ -130,18 +130,18 @@ public class XMLWriterParserTest {
         
         Symbol genSymbol1 = sign.getSymbols().get(0);
         Hand genLeftHand = genSymbol1.getLeftHand();
-        assertEquals(leftHand.getYaw(), genLeftHand.getYaw(), 0.001);
-        assertEquals(leftHand.getPitch(), genLeftHand.getPitch(), 0.001);
-        assertEquals(leftHand.getRoll(), genLeftHand.getRoll(), 0.001);
+        assertEquals(leftHand.getRotY(), genLeftHand.getRotY(), 0.001);
+        assertEquals(leftHand.getRotX(), genLeftHand.getRotX(), 0.001);
+        assertEquals(leftHand.getRotZ(), genLeftHand.getRotZ(), 0.001);
         assertEquals(leftHand.getShape(), genLeftHand.getShape());
         assertEquals(leftHand.getSide(), genLeftHand.getSide());
         assertNull(leftHand.getMovement());
 
         Hand genRightHand = genSymbol1.getRightHand();
         
-        assertEquals(rightHand.getYaw(), genRightHand.getYaw(), 0.001);
-        assertEquals(rightHand.getPitch(), genRightHand.getPitch(), 0.001);
-        assertEquals(rightHand.getRoll(), genRightHand.getRoll(), 0.001);
+        assertEquals(rightHand.getRotY(), genRightHand.getRotY(), 0.001);
+        assertEquals(rightHand.getRotX(), genRightHand.getRotX(), 0.001);
+        assertEquals(rightHand.getRotZ(), genRightHand.getRotZ(), 0.001);
         assertEquals(rightHand.getShape(), genRightHand.getShape());
         assertEquals(rightHand.getSide(), genRightHand.getSide());
         
@@ -168,9 +168,9 @@ public class XMLWriterParserTest {
         
         Hand genRightHand2 = genSymbol2.getRightHand();
         
-        assertEquals(rightHand2.getYaw(), genRightHand2.getYaw(), 0.001);
-        assertEquals(rightHand2.getPitch(), genRightHand2.getPitch(), 0.001);
-        assertEquals(rightHand2.getRoll(), genRightHand2.getRoll(), 0.001);
+        assertEquals(rightHand2.getRotY(), genRightHand2.getRotY(), 0.001);
+        assertEquals(rightHand2.getRotX(), genRightHand2.getRotX(), 0.001);
+        assertEquals(rightHand2.getRotZ(), genRightHand2.getRotZ(), 0.001);
         assertEquals(rightHand2.getShape(), genRightHand2.getShape());
         assertEquals(rightHand2.getSide(), genRightHand2.getSide());
         assertNull(genRightHand2.getMovement());

@@ -51,16 +51,16 @@ public class SignGenerator {
         bola.setWords(words);
 
         Hand leftHand = new Hand();
-        leftHand.setYaw(HandOrientation.HALF.getAngule());
-        leftHand.setPitch(HandPlane.VERTICAL.getAngule());
-        leftHand.setRoll(HandRotation.ZERO.getAngule());
+        leftHand.setRotY(HandOrientation.HALF.getAngule());
+        leftHand.setRotX(HandPlane.VERTICAL.getAngule());
+        leftHand.setRotZ(HandRotation.ZERO.getAngule());
         leftHand.setShape(HandShape.MAO_C);
         leftHand.setSide(HandSide.LEFT);
 
         Hand rightHand = new Hand();
-        rightHand.setYaw(HandOrientation.HALF.getAngule());
-        rightHand.setPitch(HandPlane.VERTICAL.getAngule());
-        rightHand.setRoll(HandRotation.ZERO.getAngule());
+        rightHand.setRotY(HandOrientation.HALF.getAngule());
+        rightHand.setRotX(HandPlane.VERTICAL.getAngule());
+        rightHand.setRotZ(HandRotation.ZERO.getAngule());
         rightHand.setShape(HandShape.MAO_C);
         rightHand.setSide(HandSide.RIGHT);
 
@@ -97,9 +97,9 @@ public class SignGenerator {
         mov.setSegments(segs);
         
         rightHand = new Hand();
-        rightHand.setYaw(HandOrientation.BLACK.getAngule());
-        rightHand.setPitch(HandPlane.HORIZONTAL.getAngule());
-        rightHand.setRoll(HandRotation.ZERO.getAngule());
+        rightHand.setRotY(HandOrientation.BLACK.getAngule());
+        rightHand.setRotX(HandPlane.HORIZONTAL.getAngule());
+        rightHand.setRotZ(HandRotation.ZERO.getAngule());
         rightHand.setShape(HandShape.INDICADOR);
         rightHand.setSide(HandSide.RIGHT);
 
@@ -146,10 +146,10 @@ public class SignGenerator {
         leftHand = new Hand();
         
         rightHand.setSide(HandSide.RIGHT);
-        rightHand.setRoll(HandRotation.ZERO.getAngule());
-        rightHand.setYaw(HandOrientation.HALF.getAngule());
+        rightHand.setRotZ(HandRotation.ZERO.getAngule());
+        rightHand.setRotY(HandOrientation.HALF.getAngule());
         rightHand.setShape(HandShape.MAO_ONZE);
-        rightHand.setPitch(HandPlane.HORIZONTAL.getAngule());
+        rightHand.setRotX(HandPlane.HORIZONTAL.getAngule());
         
         mov = new HandMovement();
         mov.setSpeed(Speed.RAPIDO);
@@ -171,10 +171,10 @@ public class SignGenerator {
         rightHand.setMovement(mov);
 
         leftHand.setSide(HandSide.LEFT);
-        leftHand.setRoll(HandRotation.ZERO.getAngule());
-        leftHand.setYaw(HandOrientation.HALF.getAngule());
+        leftHand.setRotZ(HandRotation.ZERO.getAngule());
+        leftHand.setRotY(HandOrientation.HALF.getAngule());
         leftHand.setShape(HandShape.MAO_ONZE);
-        leftHand.setPitch(HandPlane.HORIZONTAL.getAngule());
+        leftHand.setRotX(HandPlane.HORIZONTAL.getAngule());
 
         mov = new HandMovement();
         mov.setSpeed(Speed.RAPIDO);
@@ -214,8 +214,8 @@ public class SignGenerator {
         rightHand = new Hand();
         rightHand.setSide(HandSide.RIGHT);
         rightHand.setShape(HandShape.MAO_2);
-        rightHand.setYaw(HandOrientation.BLACK.getAngule());
-        rightHand.setPitch(HandPlane.VERTICAL.getAngule());
+        rightHand.setRotY(HandOrientation.BLACK.getAngule());
+        rightHand.setRotX(HandPlane.VERTICAL.getAngule());
         rightHand.setLocation(Location.OLHOS);
         
         mov = new HandMovement();

@@ -13,14 +13,14 @@
                 <fingers>NENHUM</fingers>
                 <location>ESPACO_NEUTRO</location>
                 <orientation>HALF</orientation>
-                <pitch>0.0</pitch>
+                <rotX>0.0</rotX>
                 <plane>VERTICAL</plane>
-                <roll>0.0</roll>
+                <rotZ>0.0</rotZ>
                 <rotation>ZERO</rotation>
                 <shakeYaw>false</shakeYaw>
                 <shape>MAO_C</shape>
                 <side>LEFT</side>
-                <yaw>0.0</yaw>
+                <rotY>0.0</rotY>
             </leftHand>
             <rightHand>
                 <contact>
@@ -31,14 +31,14 @@
                 <fingers>NENHUM</fingers>
                 <location>ESPACO_NEUTRO</location>
                 <orientation>HALF</orientation>
-                <pitch>0.0</pitch>
+                <rotX>0.0</rotX>
                 <plane>VERTICAL</plane>
-                <roll>0.0</roll>
+                <rotZ>0.0</rotZ>
                 <rotation>ZERO</rotation>
                 <shakeYaw>false</shakeYaw>
                 <shape>MAO_C</shape>
                 <side>RIGHT</side>
-                <yaw>0.0</yaw>
+                <rotY>0.0</rotY>
             </rightHand>
             <sequence>0</sequence>
         </symbols>
