@@ -1,0 +1,37 @@
+apply plugin: 'java'
+version = '2.1.2'
+
+task wrapper(type: Wrapper) {
+  gradleVersion = '2.13'
+}
+
+repositories {
+  mavenCentral()
+}
+
+sourceSets {
+  main {
+    java {
+      srcDir 'src'
+    }
+  }
+  test {
+    java {
+      srcDirs 'test'
+    }
+  }
+}
+
+dependencies {
+  compile fileTree(dir: 'lib', include: ['*.jar'])
+  testCompile group: 'junit', name: 'junit', version: '4.+'
+}
+
+uploadArchives {
+  uploadDescriptor = false
+  repositories {
+    flatDir {
+      dirs 'repositorioFlat'
+    }
+  }
+}
