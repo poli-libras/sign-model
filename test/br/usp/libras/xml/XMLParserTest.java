@@ -1,44 +1,22 @@
 package br.usp.libras.xml;
 
-import java.io.FileNotFoundException;
 import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
 import java.io.Reader;
-import java.io.Writer;
-
-import javax.xml.bind.JAXBException;
 
 import br.usp.libras.sign.Sign;
-import br.usp.libras.xml.XMLParser;
 
 public class XMLParserTest {
 
-	public static void main(String[] args) {
+	private static final String INPUT_XML_FILE = "resources/test/bola.xml";
+
+    public static void main(String[] args) throws Exception {
 		
 		// This is not an automated test!
 		
-		Sign sign = null;
-		try {
-			Reader reader = new FileReader("resources/test/bola.xml");
-			sign = XMLParser.parseXML(reader).get(0);
-		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (JAXBException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		Reader reader = new FileReader(INPUT_XML_FILE);
+		Sign sign = XMLParser.parseXML(reader).get(0);
 		
-		try {
-			Writer writer = new FileWriter("resources/test/bola.txt");
-			writer.write(sign.toString());
-			writer.close();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		
-		System.out.println("Object description generated");
+		System.out.println("Object read from " + INPUT_XML_FILE + ":");
+		System.out.println(sign.toString());
 	}
 }

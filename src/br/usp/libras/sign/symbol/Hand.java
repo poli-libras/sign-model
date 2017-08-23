@@ -11,6 +11,7 @@ import javax.persistence.Id;
 import javax.persistence.OneToOne;
 
 import br.usp.libras.sign.movement.HandMovement;
+import br.usp.libras.sign.transition.Transition;
 
 /**
  * Classe que modela uma mão de um sinal
@@ -51,6 +52,8 @@ public class Hand implements Serializable, Cloneable {
     private double rotZ; // antiga rotação
     
     private boolean shakeYaw;
+    
+    private Transition transition = new Transition();
 
     //// construtores, getters & setters
 
@@ -189,26 +192,36 @@ public class Hand implements Serializable, Cloneable {
 		this.contact = contact;
 	}
 	
+	
+	
+	public Transition getTransition() {
+		return transition;
+	}
+
+	public void setTransition(Transition transition) {
+		this.transition = transition;
+	}
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
 		result = prime * result + ((contact == null) ? 0 : contact.hashCode());
 		result = prime * result + ((fingers == null) ? 0 : fingers.hashCode());
-		result = prime * result
-				+ ((location == null) ? 0 : location.hashCode());
-		result = prime * result
-				+ ((movement == null) ? 0 : movement.hashCode());
+		result = prime * result + ((id == null) ? 0 : id.hashCode());
+		result = prime * result + ((location == null) ? 0 : location.hashCode());
+		result = prime * result + ((movement == null) ? 0 : movement.hashCode());
 		long temp;
 		temp = Double.doubleToLongBits(rotX);
+		result = prime * result + (int) (temp ^ (temp >>> 32));
+		temp = Double.doubleToLongBits(rotY);
 		result = prime * result + (int) (temp ^ (temp >>> 32));
 		temp = Double.doubleToLongBits(rotZ);
 		result = prime * result + (int) (temp ^ (temp >>> 32));
 		result = prime * result + (shakeYaw ? 1231 : 1237);
 		result = prime * result + ((shape == null) ? 0 : shape.hashCode());
 		result = prime * result + ((side == null) ? 0 : side.hashCode());
-		temp = Double.doubleToLongBits(rotY);
-		result = prime * result + (int) (temp ^ (temp >>> 32));
+		result = prime * result + ((transition == null) ? 0 : transition.hashCode());
 		return result;
 	}
 
@@ -228,6 +241,11 @@ public class Hand implements Serializable, Cloneable {
 			return false;
 		if (fingers != other.fingers)
 			return false;
+		if (id == null) {
+			if (other.id != null)
+				return false;
+		} else if (!id.equals(other.id))
+			return false;
 		if (location != other.location)
 			return false;
 		if (movement == null) {
@@ -235,11 +253,11 @@ public class Hand implements Serializable, Cloneable {
 				return false;
 		} else if (!movement.equals(other.movement))
 			return false;
-		if (Double.doubleToLongBits(rotX) != Double
-				.doubleToLongBits(other.rotX))
+		if (Double.doubleToLongBits(rotX) != Double.doubleToLongBits(other.rotX))
 			return false;
-		if (Double.doubleToLongBits(rotZ) != Double
-				.doubleToLongBits(other.rotZ))
+		if (Double.doubleToLongBits(rotY) != Double.doubleToLongBits(other.rotY))
+			return false;
+		if (Double.doubleToLongBits(rotZ) != Double.doubleToLongBits(other.rotZ))
 			return false;
 		if (shakeYaw != other.shakeYaw)
 			return false;
@@ -247,18 +265,43 @@ public class Hand implements Serializable, Cloneable {
 			return false;
 		if (side != other.side)
 			return false;
-		if (Double.doubleToLongBits(rotY) != Double.doubleToLongBits(other.rotY))
+		if (transition == null) {
+			if (other.transition != null)
+				return false;
+		} else if (!transition.equals(other.transition))
 			return false;
 		return true;
 	}
 	
 	@Override
 	public String toString() {
-		return "Hand [id=" + id + ", side=" + side + ", shape=" + shape
-				+ ", fingers=" + fingers + ", movement=" + movement
-				+ ", location=" + location + ", contact=" + contact + ", yaw="
-				+ rotY + ", pitch=" + rotX + ", roll=" + rotZ + ", shakeYaw="
-				+ shakeYaw + "]";
+		StringBuilder builder = new StringBuilder();
+		builder.append("Hand [id=");
+		builder.append(id);
+		builder.append(", side=");
+		builder.append(side);
+		builder.append(", shape=");
+		builder.append(shape);
+		builder.append(", fingers=");
+		builder.append(fingers);
+		builder.append(", movement=");
+		builder.append(movement);
+		builder.append(", location=");
+		builder.append(location);
+		builder.append(", contact=");
+		builder.append(contact);
+		builder.append(", rotY=");
+		builder.append(rotY);
+		builder.append(", rotX=");
+		builder.append(rotX);
+		builder.append(", rotZ=");
+		builder.append(rotZ);
+		builder.append(", shakeYaw=");
+		builder.append(shakeYaw);
+		builder.append(", transition=");
+		builder.append(transition);
+		builder.append("]");
+		return builder.toString();
 	}
 
 	@Override

@@ -21,6 +21,9 @@
                 <shape>MAO_C</shape>
                 <side>LEFT</side>
                 <rotY>0.0</rotY>
+                <transition>
+                	<path>CIRCULAR_OVER_PLUS_Y</path>
+                </transition>
             </leftHand>
             <rightHand>
                 <contact>

@@ -43,6 +43,8 @@ import br.usp.libras.sign.symbol.HandRotation;
 import br.usp.libras.sign.symbol.HandShape;
 import br.usp.libras.sign.symbol.HandSide;
 import br.usp.libras.sign.symbol.Symbol;
+import br.usp.libras.sign.transition.Path;
+import br.usp.libras.sign.transition.Transition;
 
 /**
  * Teste de Writer + Parser
@@ -83,6 +85,10 @@ public class XMLWriterParserTest {
                 Frequency.SIMPLES,  MovementLocationAt.INICIO, InterpolationType.NORMAL);
         movement.addSegment(Direction.PARA_DIREITA);
         rightHand.setMovement(movement);
+        
+        Transition rightHandTransition = new Transition();
+        rightHandTransition.setPath(Path.CIRCULAR_OVER_PLUS_Y);
+        rightHand.setTransition(rightHandTransition);
 
         Face face = new Face(20l, Chin.NADA, Eyebrow.NADA, Eyes.BEM_ABERTOS, Forehead.FRANZIDA, Gaze.NADA, Mounth.NADA,
                 Nose.NADA, Teeth.NADA, Tongue.NADA, Others.EXPRESSAO_RADIANTE);
@@ -151,6 +157,9 @@ public class XMLWriterParserTest {
         assertEquals(movement.getSpeed(), genMovement.getSpeed());
         assertEquals(movement.getType(), genMovement.getType());
         assertEquals(movement.getSegments(), genMovement.getSegments());
+        
+        Transition genTransition = genRightHand.getTransition();
+        assertEquals(rightHandTransition, genTransition);
         
         Face genFace = genSymbol1.getFace();
         
