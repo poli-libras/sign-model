@@ -1,30 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <ns2:signList xmlns:ns2="br.usp.libras.xml">
     <signs>
-        <inserted>2013-12-19T18:45:50.364-02:00</inserted>
-        <name>FELIZ</name>
+        <inserted>2017-08-23T17:54:06.807-03:00</inserted>
+        <name>OLHAR</name>
         <symbols>
-            <leftHand>
-                <contact>
-                    <location>ESPACO_NEUTRO</location>
-                    <quantity>0</quantity>
-                    <type>NENHUM</type>
-                </contact>
-                <fingers>NENHUM</fingers>
-                <location>ESPACO_NEUTRO</location>
-                <orientation>HALF</orientation>
-                <rotX>0.0</rotX>
-                <plane>VERTICAL</plane>
-                <rotZ>0.0</rotZ>
-                <rotation>ZERO</rotation>
-                <shakeYaw>false</shakeYaw>
-                <shape>MAO_C</shape>
-                <side>LEFT</side>
-                <rotY>0.0</rotY>
-                <transition>
-                	<path>CIRCULAR_OVER_PLUS_Y</path>
-                </transition>
-            </leftHand>
             <rightHand>
                 <contact>
                     <location>ESPACO_NEUTRO</location>
@@ -32,27 +11,36 @@
                     <type>NENHUM</type>
                 </contact>
                 <fingers>NENHUM</fingers>
-                <location>ESPACO_NEUTRO</location>
-                <orientation>HALF</orientation>
+                <location>OLHOS</location>
+                <movement>
+                    <segments>
+                        <direction>PARA_FRENTE</direction>
+                        <magnitude>NORMAL</magnitude>
+                        <sequence>0</sequence>
+                    </segments>
+                    <startsInLocation>false</startsInLocation>
+                </movement>
                 <rotX>0.0</rotX>
-                <plane>VERTICAL</plane>
+                <rotY>3.141592653589793</rotY>
                 <rotZ>0.0</rotZ>
-                <rotation>ZERO</rotation>
                 <shakeYaw>false</shakeYaw>
-                <shape>MAO_C</shape>
+                <shape>MAO_2</shape>
                 <side>RIGHT</side>
-                <rotY>0.0</rotY>
+                <transition>
+                    <path>LINEAR</path>
+                    <speed>NORMAL</speed>
+                </transition>
             </rightHand>
             <sequence>0</sequence>
         </symbols>
         <verbType>NAO_VERBO</verbType>
         <words>
-            <id>1</id>
-            <word>bola</word>
+            <id>2</id>
+            <word>ver</word>
         </words>
         <words>
-            <id>2</id>
-            <word>pelota</word>
+            <id>1</id>
+            <word>olhar</word>
         </words>
     </signs>
 </ns2:signList>

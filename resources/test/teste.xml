@@ -1,40 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <ns2:signList xmlns:ns2="br.usp.libras.xml">
     <signs>
-        <inserted>2017-08-23T17:50:57.765-03:00</inserted>
-        <name>BOLA</name>
+        <inserted>2017-08-23T17:52:38.327-03:00</inserted>
+        <name>OLHAR</name>
         <symbols>
-            <face>
-                <chin>NADA</chin>
-                <eyebrow>NADA</eyebrow>
-                <eyes>BEM_ABERTOS</eyes>
-                <forehead>FRANZIDA</forehead>
-                <gaze>NADA</gaze>
-                <mounth>NADA</mounth>
-                <nose>NADA</nose>
-                <others>EXPRESSAO_RADIANTE</others>
-                <teeth>NADA</teeth>
-                <tongue>NADA</tongue>
-            </face>
-            <leftHand>
-                <contact>
-                    <location>ESPACO_NEUTRO</location>
-                    <quantity>0</quantity>
-                    <type>NENHUM</type>
-                </contact>
-                <fingers>NENHUM</fingers>
-                <location>ESPACO_NEUTRO</location>
-                <rotX>0.0</rotX>
-                <rotY>1.5707963267948966</rotY>
-                <rotZ>0.0</rotZ>
-                <shakeYaw>false</shakeYaw>
-                <shape>MAO_C</shape>
-                <side>LEFT</side>
-                <transition>
-                    <path>LINEAR</path>
-                    <speed>NORMAL</speed>
-                </transition>
-            </leftHand>
             <rightHand>
                 <contact>
                     <location>ESPACO_NEUTRO</location>
@@ -42,67 +11,50 @@
                     <type>NENHUM</type>
                 </contact>
                 <fingers>NENHUM</fingers>
-                <location>ESPACO_NEUTRO</location>
+                <location>OLHOS</location>
                 <movement>
-                    <frequency>SIMPLES</frequency>
-                    <locationAt>INICIO</locationAt>
                     <segments>
-                        <direction>PARA_BAIXO</direction>
+                        <direction>PARA_FRENTE</direction>
                         <magnitude>NORMAL</magnitude>
                         <sequence>0</sequence>
                     </segments>
-                    <segments>
-                        <direction>PARA_DIREITA</direction>
-                        <magnitude>NORMAL</magnitude>
-                        <sequence>1</sequence>
-                    </segments>
-                    <speed>NORMAL</speed>
                     <startsInLocation>false</startsInLocation>
-                    <type>RETILINIO</type>
                 </movement>
                 <rotX>0.0</rotX>
-                <rotY>1.5707963267948966</rotY>
+                <rotY>3.141592653589793</rotY>
                 <rotZ>0.0</rotZ>
                 <shakeYaw>false</shakeYaw>
-                <shape>MAO_C</shape>
+                <shape>MAO_2</shape>
                 <side>RIGHT</side>
                 <transition>
-                    <path>CIRCULAR_OVER_PLUS_Y</path>
+                    <path>LINEAR</path>
                     <speed>NORMAL</speed>
                 </transition>
             </rightHand>
             <sequence>0</sequence>
         </symbols>
-        <symbols>
-            <rightHand>
-                <contact>
-                    <location>ESPACO_NEUTRO</location>
-                    <quantity>0</quantity>
-                    <type>NENHUM</type>
-                </contact>
-                <fingers>NENHUM</fingers>
-                <location>ESPACO_NEUTRO</location>
-                <rotX>0.0</rotX>
-                <rotY>3.141592653589793</rotY>
-                <rotZ>0.0</rotZ>
-                <shakeYaw>false</shakeYaw>
-                <shape>MAO_C</shape>
-                <side>RIGHT</side>
-                <transition>
-                    <path>LINEAR</path>
-                    <speed>NORMAL</speed>
-                </transition>
-            </rightHand>
-            <sequence>1</sequence>
-        </symbols>
         <verbType>NAO_VERBO</verbType>
         <words>
             <id>2</id>
-            <word>pelota</word>
+            <word>ver</word>
         </words>
         <words>
             <id>1</id>
-            <word>bola</word>
+            <word>olhar</word>
+        </words>
+    </signs>
+    <signs>
+        <inserted>2017-08-23T17:52:38.327-03:00</inserted>
+        <symbols>
+            <face>
+                <others>EXPRESSAO_RADIANTE</others>
+            </face>
+            <sequence>0</sequence>
+        </symbols>
+        <verbType>NAO_VERBO</verbType>
+        <words>
+            <id>1</id>
+            <word>feliz</word>
         </words>
     </signs>
 </ns2:signList>

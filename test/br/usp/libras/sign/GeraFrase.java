@@ -8,7 +8,7 @@ import java.util.List;
 
 import javax.xml.bind.JAXBException;
 
-import br.usp.libras.xml.XMLWriter;
+import br.usp.libras.xml.SignXMLWriter;
 
 /**
  * Gera a frase "VOCÊ OLHA FUTEBOL" em XML.
@@ -32,7 +32,7 @@ class GeraFrase {
 		// gera XML
 		try {
 			Writer writer = new FileWriter("resources/test/frase.xml");
-			XMLWriter.writeXML(frase, writer);
+			SignXMLWriter.writeXML(frase, writer);
 			writer.close();
 		} catch (IOException e) {
 			e.printStackTrace();

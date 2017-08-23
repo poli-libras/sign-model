@@ -14,7 +14,7 @@ public class XMLParserTest {
 		// This is not an automated test!
 		
 		Reader reader = new FileReader(INPUT_XML_FILE);
-		Sign sign = XMLParser.parseXML(reader).get(0);
+		Sign sign = SignXMLParser.parseXML(reader).get(0);
 		
 		System.out.println("Object read from " + INPUT_XML_FILE + ":");
 		System.out.println(sign.toString());

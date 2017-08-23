@@ -17,7 +17,7 @@ import br.usp.libras.sign.Sign;
  * @author leonardo
  *
  */
-public class XMLParser {
+public class SignXMLParser {
 	
 	public static List<Sign> parseXML(Reader reader) throws JAXBException {
 		

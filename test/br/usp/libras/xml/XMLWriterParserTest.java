@@ -122,9 +122,9 @@ public class XMLWriterParserTest {
         if (file.exists()) {
             file.delete();
         }
-        XMLWriter.writeXMLFile(signs, FILENAME);
+        SignXMLWriter.writeXMLFile(signs, FILENAME);
         
-        Sign generatedSign = XMLParser.parseXMLFile(FILENAME).get(0);
+        Sign generatedSign = SignXMLParser.parseXMLFile(FILENAME).get(0);
         
         assertEquals(sign.getName(), generatedSign.getName());
 
@@ -199,8 +199,8 @@ public class XMLWriterParserTest {
         if (file.exists()) {
             file.delete();
         }
-        XMLWriter.writeXMLFile(signs, FILENAME);
-        List<Sign> retrieved = XMLParser.parseXMLFile(FILENAME);
+        SignXMLWriter.writeXMLFile(signs, FILENAME);
+        List<Sign> retrieved = SignXMLParser.parseXMLFile(FILENAME);
 
         assertEquals(signs, retrieved);
     }

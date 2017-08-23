@@ -16,7 +16,7 @@ import br.usp.libras.sign.Sign;
  * 
  * @author Leonardo Leite
  */
-public class XMLWriter {
+public class SignXMLWriter {
     
     /**
      * 
