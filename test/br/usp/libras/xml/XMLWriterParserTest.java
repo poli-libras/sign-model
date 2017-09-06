@@ -87,7 +87,7 @@ public class XMLWriterParserTest {
         rightHand.setMovement(movement);
         
         Transition rightHandTransition = new Transition();
-        rightHandTransition.setPath(Path.CIRCULAR_OVER_PLUS_Y);
+        rightHandTransition.setPath(Path.CIRCULAR_HORARIO_EM_XY);
         rightHand.setTransition(rightHandTransition);
 
         Face face = new Face(20l, Chin.NADA, Eyebrow.NADA, Eyes.BEM_ABERTOS, Forehead.FRANZIDA, Gaze.NADA, Mounth.NADA,
