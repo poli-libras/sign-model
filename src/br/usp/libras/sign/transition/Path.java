@@ -7,12 +7,12 @@ public enum Path {
 
     public boolean horario() {
         return this == CIRCULAR_HORARIO_EM_XY || this == Path.CIRCULAR_HORARIO_EM_XZ
-                || this == Path.CIRCULAR_HORARIO_EM_XZ;
+                || this == Path.CIRCULAR_HORARIO_EM_YZ;
     }
 
     public boolean antiHorario() {
         return this == CIRCULAR_ANTI_HORARIO_EM_XY || this == Path.CIRCULAR_ANTI_HORARIO_EM_XZ
-                || this == Path.CIRCULAR_ANTI_HORARIO_EM_XZ;
+                || this == Path.CIRCULAR_ANTI_HORARIO_EM_YZ;
     }
     
     public boolean planoXY() {
