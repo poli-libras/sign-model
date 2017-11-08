@@ -2,9 +2,11 @@ package br.usp.libras.sign.transition;
 
 // TODO documentar com figura
 /**
- * Sentido (horário vs anti-horário) é do ponto de vista do emissor.
  * XY é o plano da tela.
  * Oz é perpendicular à tela.
+ * Sentido (horário vs anti-horário) é do ponto de vista do emissor.
+ * Em YZ: anti-horário = ponteiro "atacando ao meio-dia"
+ *        ou seja, face do relógio está para a direita. 
  */
 public enum Path {
 
