@@ -39,5 +39,11 @@ public enum Path {
     public boolean planoYZ() {
         return this == CIRCULAR_HORARIO_EM_YZ || this == CIRCULAR_ANTI_HORARIO_EM_YZ;
     }
+    
+    public boolean isCircular() {
+        return this == CIRCULAR_HORARIO_EM_XY || this == CIRCULAR_ANTI_HORARIO_EM_XY || 
+                this == CIRCULAR_HORARIO_EM_XZ || this == CIRCULAR_ANTI_HORARIO_EM_XZ || 
+                this == CIRCULAR_HORARIO_EM_YZ|| this ==CIRCULAR_ANTI_HORARIO_EM_YZ;
+    }
 
 }
