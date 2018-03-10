@@ -5,6 +5,9 @@ package br.usp.libras.sign.transition;
  * XY é o plano da tela.
  * Oz é perpendicular à tela.
  * Sentido (horário vs anti-horário) é do ponto de vista do emissor.
+ * Em XY: horário pro emissor é anti-horário pro receptor.
+ * Em XZ: horário vs anti-horário é definido olhando-se de cima; 
+ *        horário pro emissor é horário pro receptor também.
  * Em YZ: anti-horário = ponteiro "atacando ao meio-dia"
  *        ou seja, face do relógio está para a direita. 
  */
