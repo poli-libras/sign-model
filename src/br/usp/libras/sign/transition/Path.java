@@ -9,7 +9,8 @@ package br.usp.libras.sign.transition;
  * Em XZ: horário vs anti-horário é definido olhando-se de cima; 
  *        horário pro emissor é horário pro receptor também.
  * Em YZ: anti-horário = ponteiro "atacando ao meio-dia"
- *        ou seja, face do relógio está para a direita. 
+ *        ou seja, face do relógio está para a direita.;
+ *        horário pro emissor é anti-horário pro receptor.
  */
 public enum Path {
 
